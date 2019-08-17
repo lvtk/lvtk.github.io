@@ -10759,6 +10759,7 @@ header.masthead h1 {
 #masthead,
 #services,
 #contact,
-#portfolio {
+#portfolio,
+#cta {
   display: none;
 }
