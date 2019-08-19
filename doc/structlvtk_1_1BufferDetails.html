@@ -71,30 +71,26 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structlvtk_1_1BufferDetails-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BufferDetails Struct Reference</div>  </div>
+<div class="title">BufferDetails Struct Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__bufsize.html">Buf Size</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;lvtk/ext/bufsize.hpp&gt;</code></p>
+<p>Description of buffer details.  
+ <a href="structlvtk_1_1BufferDetails.html#details">More...</a></p>
+
+<p><code>#include &lt;lvtk/buffer_details.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1895e4ac41dc5235093a69cbf78fe4f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1BufferDetails.html#a1895e4ac41dc5235093a69cbf78fe4f4">update_with</a> (const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;feature)</td></tr>
+<tr class="memdesc:a1895e4ac41dc5235093a69cbf78fe4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update with a Feature.  <a href="#a1895e4ac41dc5235093a69cbf78fe4f4">More...</a><br /></td></tr>
 <tr class="separator:a1895e4ac41dc5235093a69cbf78fe4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e7662fd79dd2c47f8ab0151535a318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1BufferDetails.html#aa7e7662fd79dd2c47f8ab0151535a318">apply_options</a> (<a class="el" href="classlvtk_1_1Map.html">Map</a> &amp;map, const Option *options)</td></tr>
+<tr class="memitem:aa7e7662fd79dd2c47f8ab0151535a318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1BufferDetails.html#aa7e7662fd79dd2c47f8ab0151535a318">apply_options</a> (<a class="el" href="classlvtk_1_1Map.html">Map</a> &amp;map, const <a class="el" href="group__options.html#ga0602b345dcdff7eef27c1da97f8c9bd3">Option</a> *options)</td></tr>
+<tr class="memdesc:aa7e7662fd79dd2c47f8ab0151535a318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update with options.  <a href="#aa7e7662fd79dd2c47f8ab0151535a318">More...</a><br /></td></tr>
 <tr class="separator:aa7e7662fd79dd2c47f8ab0151535a318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0de4531998c77245b8866f2ba909d0fa"><td class="memItemLeft" align="right" valign="top"><a id="a0de4531998c77245b8866f2ba909d0fa"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>min</b> = 0</td></tr>
-<tr class="separator:a0de4531998c77245b8866f2ba909d0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43e74ba18dc1a237d9f7737ce8df350e"><td class="memItemLeft" align="right" valign="top"><a id="a43e74ba18dc1a237d9f7737ce8df350e"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max</b> = 0</td></tr>
-<tr class="separator:a43e74ba18dc1a237d9f7737ce8df350e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5cfad20c3e803274651cfd4f718faa0"><td class="memItemLeft" align="right" valign="top"><a id="af5cfad20c3e803274651cfd4f718faa0"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sequence_size</b> = 0</td></tr>
-<tr class="separator:af5cfad20c3e803274651cfd4f718faa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05c576a6e4533b7b9b3770005dfbeee4"><td class="memItemLeft" align="right" valign="top"><a id="a05c576a6e4533b7b9b3770005dfbeee4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>bounded</b> = false</td></tr>
 <tr class="separator:a05c576a6e4533b7b9b3770005dfbeee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,10 +100,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>fixed</b> = false</td
 <tr class="memitem:abd4d665ca3fe376ffc2aab8ac73baaa2"><td class="memItemLeft" align="right" valign="top"><a id="abd4d665ca3fe376ffc2aab8ac73baaa2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>power_of_two</b> = false</td></tr>
 <tr class="separator:abd4d665ca3fe376ffc2aab8ac73baaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304d073d6532f8a35fe84a783594b12d"><td class="memItemLeft" align="right" valign="top"><a id="a304d073d6532f8a35fe84a783594b12d"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_length</b> = 0</td></tr>
+<tr class="separator:a304d073d6532f8a35fe84a783594b12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b0e91ba5176a846d4c46b22d04755c"><td class="memItemLeft" align="right" valign="top"><a id="af7b0e91ba5176a846d4c46b22d04755c"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_length</b> = 0</td></tr>
+<tr class="separator:af7b0e91ba5176a846d4c46b22d04755c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cfad20c3e803274651cfd4f718faa0"><td class="memItemLeft" align="right" valign="top"><a id="af5cfad20c3e803274651cfd4f718faa0"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sequence_size</b> = 0</td></tr>
+<tr class="separator:af5cfad20c3e803274651cfd4f718faa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Description of buffer details</p>
-<p>Used by the <a class="el" href="structlvtk_1_1BufSize.html">BufSize</a> mixin to automatically scan for buffer information during instantiation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structlvtk_1_1BufSize.html">BufSize</a> </dd></dl>
+<div class="textblock"><p>Description of buffer details. </p>
+<p>Used by the BufSize interface to automatically scan for buffer information during instantiation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structlvtk_1_1BufSize.html">BufSize</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa7e7662fd79dd2c47f8ab0151535a318"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7e7662fd79dd2c47f8ab0151535a318">&#9670;&nbsp;</a></span>apply_options()</h2>
@@ -127,7 +132,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>power_of_two</b> = fa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Option *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__options.html#ga0602b345dcdff7eef27c1da97f8c9bd3">Option</a> *&#160;</td>
           <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
@@ -142,11 +147,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>power_of_two</b> = fa
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Update with options</p>
+
+<p>Update with options. </p>
 <p>Updates bufsize:minBlockLength, bufsize:maxBlockLength, and bufsize:sequenceSize if found in the Options array</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">map</td><td><a class="el" href="classlvtk_1_1Map.html">Map</a> for getting required LV2_URIDs </td></tr>
+    <tr><td class="paramname">map</td><td>Map for getting required LV2_URIDs </td></tr>
     <tr><td class="paramname">options</td><td>The Options array to scan </td></tr>
   </table>
   </dd>
@@ -177,18 +183,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>power_of_two</b> = fa
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Update with a <a class="el" href="structlvtk_1_1Feature.html">Feature</a></p>
-<p>Sets bufsize:boundedBlockLength, bufsize:powerOf2BlockLength, or bufsize:fixedBlockLength if the <a class="el" href="structlvtk_1_1Feature.html">Feature</a>'s URI matches. </p>
+
+<p>Update with a Feature. </p>
+<p>Sets bufsize:boundedBlockLength, bufsize:powerOf2BlockLength, or bufsize:fixedBlockLength if the Feature's URI matches. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>ext/bufsize.hpp</li>
+<li>buffer_details.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

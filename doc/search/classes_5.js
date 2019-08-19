@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['idle',['Idle',['../structlvtk_1_1Idle.html',1,'lvtk']]],
-  ['instance',['Instance',['../classlvtk_1_1ui_1_1Instance.html',1,'Instance&lt; S, E &gt;'],['../classlvtk_1_1Instance.html',1,'Instance&lt; S, E &gt;']]],
-  ['instanceaccess',['InstanceAccess',['../structlvtk_1_1InstanceAccess.html',1,'lvtk']]],
-  ['instanceargs',['InstanceArgs',['../structlvtk_1_1InstanceArgs.html',1,'InstanceArgs'],['../structlvtk_1_1ui_1_1InstanceArgs.html',1,'InstanceArgs']]],
-  ['interface',['Interface',['../structlvtk_1_1Interface.html',1,'lvtk']]],
-  ['interface_3c_20noinstance_20_3e',['Interface&lt; NoInstance &gt;',['../structlvtk_1_1Interface.html',1,'lvtk']]],
-  ['iterator',['iterator',['../classlvtk_1_1AtomObject_1_1iterator.html',1,'AtomObject::iterator'],['../classlvtk_1_1AtomSequence_1_1iterator.html',1,'AtomSequence::iterator'],['../classlvtk_1_1AtomVector_1_1iterator.html',1,'AtomVector::iterator']]]
+  ['feature',['Feature',['../structlvtk_1_1Feature.html',1,'lvtk']]],
+  ['featuredata',['FeatureData',['../structlvtk_1_1FeatureData.html',1,'lvtk']]],
+  ['featuredata_3c_20lv2_5fextension_5fdata_5ffeature_20_3e',['FeatureData&lt; LV2_Extension_Data_Feature &gt;',['../structlvtk_1_1FeatureData.html',1,'lvtk']]],
+  ['featuredata_3c_20lv2_5flog_5flog_20_3e',['FeatureData&lt; LV2_Log_Log &gt;',['../structlvtk_1_1FeatureData.html',1,'lvtk']]],
+  ['featuredata_3c_20lv2_5fresize_5fport_5fresize_20_3e',['FeatureData&lt; LV2_Resize_Port_Resize &gt;',['../structlvtk_1_1FeatureData.html',1,'lvtk']]],
+  ['featuredata_3c_20lv2_5furid_5fmap_20_3e',['FeatureData&lt; LV2_URID_Map &gt;',['../structlvtk_1_1FeatureData.html',1,'lvtk']]],
+  ['featuredata_3c_20lv2_5furid_5funmap_20_3e',['FeatureData&lt; LV2_URID_Unmap &gt;',['../structlvtk_1_1FeatureData.html',1,'lvtk']]],
+  ['featuredata_3c_20lv2_5fworker_5fschedule_20_3e',['FeatureData&lt; LV2_Worker_Schedule &gt;',['../structlvtk_1_1FeatureData.html',1,'lvtk']]],
+  ['featureiterator',['FeatureIterator',['../classlvtk_1_1FeatureIterator.html',1,'lvtk']]],
+  ['featurelist',['FeatureList',['../structlvtk_1_1FeatureList.html',1,'lvtk']]]
 ];

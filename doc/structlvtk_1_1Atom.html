@@ -73,58 +73,104 @@ $(function() {
 <a href="#friends">Friends</a> &#124;
 <a href="structlvtk_1_1Atom-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Atom Struct Reference</div>  </div>
+<div class="title">Atom Struct Reference<div class="ingroups"><a class="el" href="group__atom.html">Atom</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;lvtk/ext/atom.hpp&gt;</code></p>
+<p>Basic wrapper for an LV2_Atom These are intended to be used on the stack.  
+ <a href="structlvtk_1_1Atom.html#details">More...</a></p>
+
+<p><code>#include &lt;lvtk/atom.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1793e5490b3a24571afcf0529b44c92a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a1793e5490b3a24571afcf0529b44c92a">Atom</a> ()</td></tr>
+<tr class="memitem:a1793e5490b3a24571afcf0529b44c92a"><td class="memItemLeft" align="right" valign="top"><a id="a1793e5490b3a24571afcf0529b44c92a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a1793e5490b3a24571afcf0529b44c92a">Atom</a> ()</td></tr>
+<tr class="memdesc:a1793e5490b3a24571afcf0529b44c92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a null Atom. <br /></td></tr>
 <tr class="separator:a1793e5490b3a24571afcf0529b44c92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acefbdbecc70c6055bc17ca033499a6ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#acefbdbecc70c6055bc17ca033499a6ea">Atom</a> (const void *atom)</td></tr>
+<tr class="memitem:acefbdbecc70c6055bc17ca033499a6ea"><td class="memItemLeft" align="right" valign="top"><a id="acefbdbecc70c6055bc17ca033499a6ea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#acefbdbecc70c6055bc17ca033499a6ea">Atom</a> (const void *atom)</td></tr>
+<tr class="memdesc:acefbdbecc70c6055bc17ca033499a6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Atom from raw data. <br /></td></tr>
 <tr class="separator:acefbdbecc70c6055bc17ca033499a6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d03d76621a00e08e92ce2d0b98bee61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a1d03d76621a00e08e92ce2d0b98bee61">Atom</a> (ForgeRef ref)</td></tr>
+<tr class="memitem:a1d03d76621a00e08e92ce2d0b98bee61"><td class="memItemLeft" align="right" valign="top"><a id="a1d03d76621a00e08e92ce2d0b98bee61"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a1d03d76621a00e08e92ce2d0b98bee61">Atom</a> (<a class="el" href="group__atom.html#ga632a102ffdf911a8d1eb14375c11bb04">ForgeRef</a> ref)</td></tr>
+<tr class="memdesc:a1d03d76621a00e08e92ce2d0b98bee61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Atom from a Forge Ref. <br /></td></tr>
 <tr class="separator:a1d03d76621a00e08e92ce2d0b98bee61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b60d98676a3f6e4fb5187f72da150d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a8b60d98676a3f6e4fb5187f72da150d5">Atom</a> (AtomEvent *ev)</td></tr>
+<tr class="memitem:a8b60d98676a3f6e4fb5187f72da150d5"><td class="memItemLeft" align="right" valign="top"><a id="a8b60d98676a3f6e4fb5187f72da150d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a8b60d98676a3f6e4fb5187f72da150d5">Atom</a> (<a class="el" href="group__atom.html#gab66ee3814459da8bd53998149b766e67">AtomEvent</a> *ev)</td></tr>
+<tr class="memdesc:a8b60d98676a3f6e4fb5187f72da150d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Atom from an AtomEvent. <br /></td></tr>
 <tr class="separator:a8b60d98676a3f6e4fb5187f72da150d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a055daed1a689827d7c876d0e86e6531d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a055daed1a689827d7c876d0e86e6531d">Atom</a> (const LV2_Atom &amp;ref)</td></tr>
+<tr class="memitem:a055daed1a689827d7c876d0e86e6531d"><td class="memItemLeft" align="right" valign="top"><a id="a055daed1a689827d7c876d0e86e6531d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a055daed1a689827d7c876d0e86e6531d">Atom</a> (const LV2_Atom &amp;ref)</td></tr>
+<tr class="memdesc:a055daed1a689827d7c876d0e86e6531d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Atom from a CType reference. <br /></td></tr>
 <tr class="separator:a055daed1a689827d7c876d0e86e6531d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9317f65ad4fa5148ad6bf93587e97bde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a9317f65ad4fa5148ad6bf93587e97bde">Atom</a> (const <a class="el" href="structlvtk_1_1AtomObject.html">AtomObject</a> &amp;o)</td></tr>
+<tr class="memitem:a9317f65ad4fa5148ad6bf93587e97bde"><td class="memItemLeft" align="right" valign="top"><a id="a9317f65ad4fa5148ad6bf93587e97bde"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a9317f65ad4fa5148ad6bf93587e97bde">Atom</a> (const <a class="el" href="structlvtk_1_1AtomObject.html">AtomObject</a> &amp;o)</td></tr>
+<tr class="memdesc:a9317f65ad4fa5148ad6bf93587e97bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Atom from an AtomObject. <br /></td></tr>
 <tr class="separator:a9317f65ad4fa5148ad6bf93587e97bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54e61d2bb6c2a58d7b98180555af09e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a54e61d2bb6c2a58d7b98180555af09e4">is_null</a> () const</td></tr>
+<tr class="memitem:a54e61d2bb6c2a58d7b98180555af09e4"><td class="memItemLeft" align="right" valign="top"><a id="a54e61d2bb6c2a58d7b98180555af09e4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a54e61d2bb6c2a58d7b98180555af09e4">is_null</a> () const</td></tr>
+<tr class="memdesc:a54e61d2bb6c2a58d7b98180555af09e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the Atom is null. <br /></td></tr>
 <tr class="separator:a54e61d2bb6c2a58d7b98180555af09e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11f7f699c3351ec07aaf30a2d5f57660"><td class="memTemplParams" colspan="2">template&lt;typename POD &gt; </td></tr>
 <tr class="memitem:a11f7f699c3351ec07aaf30a2d5f57660"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a11f7f699c3351ec07aaf30a2d5f57660">has_type_and_equals</a> (uint32_t <a class="el" href="structlvtk_1_1Atom.html#af8181cc75ff1ea21b1b76632257949d3">type</a>, const POD &amp;pod_value) const</td></tr>
+<tr class="memdesc:a11f7f699c3351ec07aaf30a2d5f57660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this atom has type and equals a given value.  <a href="#a11f7f699c3351ec07aaf30a2d5f57660">More...</a><br /></td></tr>
 <tr class="separator:a11f7f699c3351ec07aaf30a2d5f57660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae783cf18d4b6566e47a9a40e4e921540"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#ae783cf18d4b6566e47a9a40e4e921540">has_object_type</a> (uint32_t otype) const</td></tr>
+<tr class="memitem:ae783cf18d4b6566e47a9a40e4e921540"><td class="memItemLeft" align="right" valign="top"><a id="ae783cf18d4b6566e47a9a40e4e921540"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#ae783cf18d4b6566e47a9a40e4e921540">has_object_type</a> (uint32_t otype) const</td></tr>
+<tr class="memdesc:ae783cf18d4b6566e47a9a40e4e921540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this atom is an otype when casted to AtomObject. <br /></td></tr>
 <tr class="separator:ae783cf18d4b6566e47a9a40e4e921540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca9a717d8c0092a0aa01db110e2633e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a0ca9a717d8c0092a0aa01db110e2633e">body</a> () const</td></tr>
+<tr class="memitem:a0ca9a717d8c0092a0aa01db110e2633e"><td class="memItemLeft" align="right" valign="top"><a id="a0ca9a717d8c0092a0aa01db110e2633e"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a0ca9a717d8c0092a0aa01db110e2633e">body</a> () const</td></tr>
+<tr class="memdesc:a0ca9a717d8c0092a0aa01db110e2633e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Atom's body. <br /></td></tr>
 <tr class="separator:a0ca9a717d8c0092a0aa01db110e2633e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac233e154e2fa6c9bcbfeee6c57c13b2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#ac233e154e2fa6c9bcbfeee6c57c13b2c">as_bool</a> () const</td></tr>
+<tr class="memitem:ac233e154e2fa6c9bcbfeee6c57c13b2c"><td class="memItemLeft" align="right" valign="top"><a id="ac233e154e2fa6c9bcbfeee6c57c13b2c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#ac233e154e2fa6c9bcbfeee6c57c13b2c">as_bool</a> () const</td></tr>
+<tr class="memdesc:ac233e154e2fa6c9bcbfeee6c57c13b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the body as a boolean. <br /></td></tr>
 <tr class="separator:ac233e154e2fa6c9bcbfeee6c57c13b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58432f14aa6de452dc3a3616058e09c7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a58432f14aa6de452dc3a3616058e09c7">as_float</a> () const</td></tr>
+<tr class="memitem:a58432f14aa6de452dc3a3616058e09c7"><td class="memItemLeft" align="right" valign="top"><a id="a58432f14aa6de452dc3a3616058e09c7"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a58432f14aa6de452dc3a3616058e09c7">as_float</a> () const</td></tr>
+<tr class="memdesc:a58432f14aa6de452dc3a3616058e09c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the body as a float. <br /></td></tr>
 <tr class="separator:a58432f14aa6de452dc3a3616058e09c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8551f42e950a977d5664fbf208d67a8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#ac8551f42e950a977d5664fbf208d67a8">as_double</a> () const</td></tr>
+<tr class="memitem:ac8551f42e950a977d5664fbf208d67a8"><td class="memItemLeft" align="right" valign="top"><a id="ac8551f42e950a977d5664fbf208d67a8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#ac8551f42e950a977d5664fbf208d67a8">as_double</a> () const</td></tr>
+<tr class="memdesc:ac8551f42e950a977d5664fbf208d67a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the body as a double. <br /></td></tr>
 <tr class="separator:ac8551f42e950a977d5664fbf208d67a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa19277fe7341736b34ec992f689293b5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structlvtk_1_1AtomObject.html">AtomObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#aa19277fe7341736b34ec992f689293b5">as_object</a> () const</td></tr>
+<tr class="memitem:aa19277fe7341736b34ec992f689293b5"><td class="memItemLeft" align="right" valign="top"><a id="aa19277fe7341736b34ec992f689293b5"></a>
+const <a class="el" href="structlvtk_1_1AtomObject.html">AtomObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#aa19277fe7341736b34ec992f689293b5">as_object</a> () const</td></tr>
+<tr class="memdesc:aa19277fe7341736b34ec992f689293b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the atom casted to LV2_Atom_Object. <br /></td></tr>
 <tr class="separator:aa19277fe7341736b34ec992f689293b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a307e192daf5ed44e88e4e11212a892b3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a307e192daf5ed44e88e4e11212a892b3">as_string</a> () const</td></tr>
+<tr class="memitem:a307e192daf5ed44e88e4e11212a892b3"><td class="memItemLeft" align="right" valign="top"><a id="a307e192daf5ed44e88e4e11212a892b3"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a307e192daf5ed44e88e4e11212a892b3">as_string</a> () const</td></tr>
+<tr class="memdesc:a307e192daf5ed44e88e4e11212a892b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the body as a string. <br /></td></tr>
 <tr class="separator:a307e192daf5ed44e88e4e11212a892b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ca38ac644290522030249e9c79b519d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a6ca38ac644290522030249e9c79b519d">as_int</a> () const</td></tr>
+<tr class="memitem:a6ca38ac644290522030249e9c79b519d"><td class="memItemLeft" align="right" valign="top"><a id="a6ca38ac644290522030249e9c79b519d"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a6ca38ac644290522030249e9c79b519d">as_int</a> () const</td></tr>
+<tr class="memdesc:a6ca38ac644290522030249e9c79b519d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the body as a 32bit integer. <br /></td></tr>
 <tr class="separator:a6ca38ac644290522030249e9c79b519d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af44216c34510fbda2dfd374d34c08e6e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#af44216c34510fbda2dfd374d34c08e6e">as_long</a> () const</td></tr>
+<tr class="memitem:af44216c34510fbda2dfd374d34c08e6e"><td class="memItemLeft" align="right" valign="top"><a id="af44216c34510fbda2dfd374d34c08e6e"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#af44216c34510fbda2dfd374d34c08e6e">as_long</a> () const</td></tr>
+<tr class="memdesc:af44216c34510fbda2dfd374d34c08e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the body as a long. <br /></td></tr>
 <tr class="separator:af44216c34510fbda2dfd374d34c08e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f56578b16aafdc6bf763facaeeba19e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a2f56578b16aafdc6bf763facaeeba19e">as_urid</a> () const</td></tr>
+<tr class="memitem:a2f56578b16aafdc6bf763facaeeba19e"><td class="memItemLeft" align="right" valign="top"><a id="a2f56578b16aafdc6bf763facaeeba19e"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a2f56578b16aafdc6bf763facaeeba19e">as_urid</a> () const</td></tr>
+<tr class="memdesc:a2f56578b16aafdc6bf763facaeeba19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the body as a URID. <br /></td></tr>
 <tr class="separator:a2f56578b16aafdc6bf763facaeeba19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8181cc75ff1ea21b1b76632257949d3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#af8181cc75ff1ea21b1b76632257949d3">type</a> () const</td></tr>
+<tr class="memitem:af8181cc75ff1ea21b1b76632257949d3"><td class="memItemLeft" align="right" valign="top"><a id="af8181cc75ff1ea21b1b76632257949d3"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#af8181cc75ff1ea21b1b76632257949d3">type</a> () const</td></tr>
+<tr class="memdesc:af8181cc75ff1ea21b1b76632257949d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get this Atom's type. <br /></td></tr>
 <tr class="separator:af8181cc75ff1ea21b1b76632257949d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a184348069399ccb6bb23f6b4a0fcd7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a9a184348069399ccb6bb23f6b4a0fcd7">total_size</a> () const</td></tr>
+<tr class="memitem:a9a184348069399ccb6bb23f6b4a0fcd7"><td class="memItemLeft" align="right" valign="top"><a id="a9a184348069399ccb6bb23f6b4a0fcd7"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a9a184348069399ccb6bb23f6b4a0fcd7">total_size</a> () const</td></tr>
+<tr class="memdesc:a9a184348069399ccb6bb23f6b4a0fcd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Atom's total size. <br /></td></tr>
 <tr class="separator:a9a184348069399ccb6bb23f6b4a0fcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5475d03aac0f961ffd41dace177230fa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a5475d03aac0f961ffd41dace177230fa">size</a> () const</td></tr>
+<tr class="memitem:a5475d03aac0f961ffd41dace177230fa"><td class="memItemLeft" align="right" valign="top"><a id="a5475d03aac0f961ffd41dace177230fa"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a5475d03aac0f961ffd41dace177230fa">size</a> () const</td></tr>
+<tr class="memdesc:a5475d03aac0f961ffd41dace177230fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Atom's body size. <br /></td></tr>
 <tr class="separator:a5475d03aac0f961ffd41dace177230fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4c5969f37309e314d232a408dd404ca"><td class="memItemLeft" align="right" valign="top">const LV2_Atom *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#ac4c5969f37309e314d232a408dd404ca">c_obj</a> () const</td></tr>
+<tr class="memitem:ac4c5969f37309e314d232a408dd404ca"><td class="memItemLeft" align="right" valign="top"><a id="ac4c5969f37309e314d232a408dd404ca"></a>
+const LV2_Atom *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#ac4c5969f37309e314d232a408dd404ca">c_obj</a> () const</td></tr>
+<tr class="memdesc:ac4c5969f37309e314d232a408dd404ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying LV2_Atom pointer. <br /></td></tr>
 <tr class="separator:ac4c5969f37309e314d232a408dd404ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b76affb3b5d35fa419ac234144038b"><td class="memItemLeft" align="right" valign="top"><a id="a67b76affb3b5d35fa419ac234144038b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
@@ -141,7 +187,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a cl
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ec72b009365a7f88871d69130ebd6cd"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a4ec72b009365a7f88871d69130ebd6cd">pad_size</a> (uint32_t <a class="el" href="structlvtk_1_1Atom.html#a5475d03aac0f961ffd41dace177230fa">size</a>)</td></tr>
+<tr class="memitem:a4ec72b009365a7f88871d69130ebd6cd"><td class="memItemLeft" align="right" valign="top"><a id="a4ec72b009365a7f88871d69130ebd6cd"></a>
+static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Atom.html#a4ec72b009365a7f88871d69130ebd6cd">pad_size</a> (uint32_t <a class="el" href="structlvtk_1_1Atom.html#a5475d03aac0f961ffd41dace177230fa">size</a>)</td></tr>
+<tr class="memdesc:a4ec72b009365a7f88871d69130ebd6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pad a size to 64 bits. <br /></td></tr>
 <tr class="separator:a4ec72b009365a7f88871d69130ebd6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -166,457 +214,8 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>AtomObject</b></td>
 <tr class="separator:a8b77b90df134ee74eba4b396c16307a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Basic wrapper for an LV2_Atom These are intended to be used on the stack </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1793e5490b3a24571afcf0529b44c92a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1793e5490b3a24571afcf0529b44c92a">&#9670;&nbsp;</a></span>Atom() <span class="overload">[1/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlvtk_1_1Atom.html">Atom</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a null <a class="el" href="structlvtk_1_1Atom.html">Atom</a> </p>
-
-</div>
-</div>
-<a id="acefbdbecc70c6055bc17ca033499a6ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acefbdbecc70c6055bc17ca033499a6ea">&#9670;&nbsp;</a></span>Atom() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlvtk_1_1Atom.html">Atom</a> </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>atom</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create an <a class="el" href="structlvtk_1_1Atom.html">Atom</a> from raw data </p>
-
-</div>
-</div>
-<a id="a1d03d76621a00e08e92ce2d0b98bee61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d03d76621a00e08e92ce2d0b98bee61">&#9670;&nbsp;</a></span>Atom() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlvtk_1_1Atom.html">Atom</a> </td>
-          <td>(</td>
-          <td class="paramtype">ForgeRef&#160;</td>
-          <td class="paramname"><em>ref</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create an <a class="el" href="structlvtk_1_1Atom.html">Atom</a> from a Forge Ref </p>
-
-</div>
-</div>
-<a id="a8b60d98676a3f6e4fb5187f72da150d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b60d98676a3f6e4fb5187f72da150d5">&#9670;&nbsp;</a></span>Atom() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlvtk_1_1Atom.html">Atom</a> </td>
-          <td>(</td>
-          <td class="paramtype">AtomEvent *&#160;</td>
-          <td class="paramname"><em>ev</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create an <a class="el" href="structlvtk_1_1Atom.html">Atom</a> from an AtomEvent </p>
-
-</div>
-</div>
-<a id="a055daed1a689827d7c876d0e86e6531d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a055daed1a689827d7c876d0e86e6531d">&#9670;&nbsp;</a></span>Atom() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlvtk_1_1Atom.html">Atom</a> </td>
-          <td>(</td>
-          <td class="paramtype">const LV2_Atom &amp;&#160;</td>
-          <td class="paramname"><em>ref</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create an <a class="el" href="structlvtk_1_1Atom.html">Atom</a> from a CType reference </p>
-
-</div>
-</div>
-<a id="a9317f65ad4fa5148ad6bf93587e97bde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9317f65ad4fa5148ad6bf93587e97bde">&#9670;&nbsp;</a></span>Atom() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlvtk_1_1Atom.html">Atom</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structlvtk_1_1AtomObject.html">AtomObject</a> &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create an <a class="el" href="structlvtk_1_1Atom.html">Atom</a> from an <a class="el" href="structlvtk_1_1AtomObject.html">AtomObject</a> </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac233e154e2fa6c9bcbfeee6c57c13b2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac233e154e2fa6c9bcbfeee6c57c13b2c">&#9670;&nbsp;</a></span>as_bool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool as_bool </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the body as a boolean </p>
-
-</div>
-</div>
-<a id="ac8551f42e950a977d5664fbf208d67a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8551f42e950a977d5664fbf208d67a8">&#9670;&nbsp;</a></span>as_double()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double as_double </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the body as a double </p>
-
-</div>
-</div>
-<a id="a58432f14aa6de452dc3a3616058e09c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58432f14aa6de452dc3a3616058e09c7">&#9670;&nbsp;</a></span>as_float()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float as_float </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the body as a float </p>
-
-</div>
-</div>
-<a id="a6ca38ac644290522030249e9c79b519d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ca38ac644290522030249e9c79b519d">&#9670;&nbsp;</a></span>as_int()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t as_int </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the body as a 32bit integer </p>
-
-</div>
-</div>
-<a id="af44216c34510fbda2dfd374d34c08e6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af44216c34510fbda2dfd374d34c08e6e">&#9670;&nbsp;</a></span>as_long()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t as_long </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the body as a long </p>
-
-</div>
-</div>
-<a id="aa19277fe7341736b34ec992f689293b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa19277fe7341736b34ec992f689293b5">&#9670;&nbsp;</a></span>as_object()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structlvtk_1_1AtomObject.html">AtomObject</a> as_object </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the atom casted to LV2_Atom_Object </p>
-
-</div>
-</div>
-<a id="a307e192daf5ed44e88e4e11212a892b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a307e192daf5ed44e88e4e11212a892b3">&#9670;&nbsp;</a></span>as_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* as_string </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the body as a string </p>
-
-</div>
-</div>
-<a id="a2f56578b16aafdc6bf763facaeeba19e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f56578b16aafdc6bf763facaeeba19e">&#9670;&nbsp;</a></span>as_urid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t as_urid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the body as a URID </p>
-
-</div>
-</div>
-<a id="a0ca9a717d8c0092a0aa01db110e2633e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ca9a717d8c0092a0aa01db110e2633e">&#9670;&nbsp;</a></span>body()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* body </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the <a class="el" href="structlvtk_1_1Atom.html">Atom</a>'s body </p>
-
-</div>
-</div>
-<a id="ac4c5969f37309e314d232a408dd404ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4c5969f37309e314d232a408dd404ca">&#9670;&nbsp;</a></span>c_obj()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const LV2_Atom* c_obj </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the underlying LV2_Atom pointer </p>
-
-</div>
-</div>
-<a id="ae783cf18d4b6566e47a9a40e4e921540"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae783cf18d4b6566e47a9a40e4e921540">&#9670;&nbsp;</a></span>has_object_type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool has_object_type </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>otype</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns true if this atom is an otype when casted to <a class="el" href="structlvtk_1_1AtomObject.html">AtomObject</a> </p>
-
-</div>
-</div>
+<div class="textblock"><p>Basic wrapper for an LV2_Atom These are intended to be used on the stack. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a11f7f699c3351ec07aaf30a2d5f57660"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11f7f699c3351ec07aaf30a2d5f57660">&#9670;&nbsp;</a></span>has_type_and_equals()</h2>
 
@@ -650,7 +249,9 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>AtomObject</b></td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns true if this atom has type and equals a given value </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Returns true if this atom has type and equals a given value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>The atom POD type </td></tr>
     <tr><td class="paramname">pod_value</td><td>The value to test </td></tr>
@@ -660,144 +261,13 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>AtomObject</b></td>
 
 </div>
 </div>
-<a id="a54e61d2bb6c2a58d7b98180555af09e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54e61d2bb6c2a58d7b98180555af09e4">&#9670;&nbsp;</a></span>is_null()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool is_null </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Determine if the <a class="el" href="structlvtk_1_1Atom.html">Atom</a> is null </p>
-
-</div>
-</div>
-<a id="a4ec72b009365a7f88871d69130ebd6cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ec72b009365a7f88871d69130ebd6cd">&#9670;&nbsp;</a></span>pad_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t pad_size </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Pad a size to 64 bits </p>
-
-</div>
-</div>
-<a id="a5475d03aac0f961ffd41dace177230fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5475d03aac0f961ffd41dace177230fa">&#9670;&nbsp;</a></span>size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the <a class="el" href="structlvtk_1_1Atom.html">Atom</a>'s body size </p>
-
-</div>
-</div>
-<a id="a9a184348069399ccb6bb23f6b4a0fcd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a184348069399ccb6bb23f6b4a0fcd7">&#9670;&nbsp;</a></span>total_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t total_size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the <a class="el" href="structlvtk_1_1Atom.html">Atom</a>'s total size </p>
-
-</div>
-</div>
-<a id="af8181cc75ff1ea21b1b76632257949d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8181cc75ff1ea21b1b76632257949d3">&#9670;&nbsp;</a></span>type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t type </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get this <a class="el" href="structlvtk_1_1Atom.html">Atom</a>'s type </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>atom.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

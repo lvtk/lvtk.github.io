@@ -2,7 +2,7 @@ var searchData=
 [
   ['work',['work',['../structlvtk_1_1Worker.html#a4040717d712c23152351c44cc6ad60a7',1,'lvtk::Worker']]],
   ['work_5fresponse',['work_response',['../structlvtk_1_1Worker.html#a0967eb1f6b19f917c2c695e50823e504',1,'lvtk::Worker']]],
-  ['write',['write',['../classlvtk_1_1ui_1_1Controller.html#a103155514481c73de6f880bd9939d6a4',1,'lvtk::ui::Controller::write()'],['../classlvtk_1_1ui_1_1Instance.html#a103155514481c73de6f880bd9939d6a4',1,'lvtk::ui::Instance::write(uint32_t port, uint32_t size, uint32_t protocol, const void *data) const'],['../classlvtk_1_1ui_1_1Instance.html#a72501070d8b5d9cfff142e68a8dc2253',1,'lvtk::ui::Instance::write(uint32_t port, float value) const']]],
+  ['write',['write',['../classlvtk_1_1Controller.html#a103155514481c73de6f880bd9939d6a4',1,'lvtk::Controller::write()'],['../classlvtk_1_1UIInstance.html#a103155514481c73de6f880bd9939d6a4',1,'lvtk::UIInstance::write(uint32_t port, uint32_t size, uint32_t protocol, const void *data) const'],['../classlvtk_1_1UIInstance.html#a72501070d8b5d9cfff142e68a8dc2253',1,'lvtk::UIInstance::write(uint32_t port, float value) const']]],
   ['write_5fatom',['write_atom',['../classlvtk_1_1AtomForge.html#a06df2b4ad13cffc422f68db961204c8d',1,'lvtk::AtomForge']]],
   ['write_5fblank',['write_blank',['../classlvtk_1_1AtomForge.html#abcd88faa220f9c71d37f4f0ec26a0f19',1,'lvtk::AtomForge']]],
   ['write_5fbool',['write_bool',['../classlvtk_1_1AtomForge.html#a82059c564581130ee1cf8c4c2d20dee9',1,'lvtk::AtomForge']]],

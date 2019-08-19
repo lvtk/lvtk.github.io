@@ -1,15 +1,27 @@
 var searchData=
 [
+  ['sample_5frate',['sample_rate',['../structlvtk_1_1Args.html#a5cd2077a80052e0e93450f6259fa5f92',1,'lvtk::Args']]],
   ['save',['save',['../structlvtk_1_1State.html#a3425ef932e308b47aff43d9c215f1b9e',1,'lvtk::State']]],
-  ['schedule_5fwork',['schedule_work',['../structlvtk_1_1Worker.html#a981392ff87f2de5beaa2fbd77a33ec6a',1,'lvtk::Worker']]],
+  ['schedule_5fwork',['schedule_work',['../structlvtk_1_1Scheduler.html#a981392ff87f2de5beaa2fbd77a33ec6a',1,'lvtk::Scheduler::schedule_work()'],['../structlvtk_1_1Worker.html#a981392ff87f2de5beaa2fbd77a33ec6a',1,'lvtk::Worker::schedule_work()']]],
   ['scheduler',['Scheduler',['../structlvtk_1_1Scheduler.html',1,'lvtk']]],
   ['sequence_5fhead',['sequence_head',['../classlvtk_1_1AtomForge.html#a090826409d19522dba3cebd0c01413cc',1,'lvtk::AtomForge']]],
+  ['set',['set',['../structlvtk_1_1Options.html#ad060ed3eda225a3909062068bce33886',1,'lvtk::Options']]],
   ['set_5fbuffer',['set_buffer',['../classlvtk_1_1AtomForge.html#a813a3fd1f3ef153b33c9a4e809b6e8e6',1,'lvtk::AtomForge']]],
-  ['set_5ffeature',['set_feature',['../structlvtk_1_1FeatureData.html#ab1034ac97e0c9c02559c0ba571810dee',1,'lvtk::FeatureData::set_feature()'],['../structlvtk_1_1DataAccess.html#ab1034ac97e0c9c02559c0ba571810dee',1,'lvtk::DataAccess::set_feature()'],['../structlvtk_1_1InstanceAccess.html#ab1034ac97e0c9c02559c0ba571810dee',1,'lvtk::InstanceAccess::set_feature()'],['../structlvtk_1_1OptionsArray.html#ab1034ac97e0c9c02559c0ba571810dee',1,'lvtk::OptionsArray::set_feature()']]],
+  ['set_5ffeature',['set_feature',['../structlvtk_1_1InstanceHandle.html#a941335f65247cea43e744ae5beec9a8e',1,'lvtk::InstanceHandle::set_feature()'],['../structlvtk_1_1FeatureData.html#a941335f65247cea43e744ae5beec9a8e',1,'lvtk::FeatureData::set_feature()'],['../structlvtk_1_1OptionsFeature.html#a941335f65247cea43e744ae5beec9a8e',1,'lvtk::OptionsFeature::set_feature()']]],
   ['show',['Show',['../structlvtk_1_1Show.html',1,'Show&lt; I &gt;'],['../structlvtk_1_1Show.html#a04dcaa0855f21490969373963808266f',1,'lvtk::Show::show()']]],
   ['size',['size',['../structlvtk_1_1Atom.html#a5475d03aac0f961ffd41dace177230fa',1,'lvtk::Atom::size()'],['../structlvtk_1_1AtomSequence.html#a5475d03aac0f961ffd41dace177230fa',1,'lvtk::AtomSequence::size()'],['../classlvtk_1_1OptionsIterator.html#a5475d03aac0f961ffd41dace177230fa',1,'lvtk::OptionsIterator::size()']]],
-  ['state',['State',['../structlvtk_1_1State.html',1,'lvtk']]],
+  ['state',['State',['../structlvtk_1_1State.html',1,'State&lt; I &gt;'],['../group__state.html',1,'(Global Namespace)']]],
+  ['state_5ferr_5fbad_5fflags',['STATE_ERR_BAD_FLAGS',['../group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580ac3b06ce6b4c738fec86e5c4e8440d367',1,'lvtk']]],
+  ['state_5ferr_5fbad_5ftype',['STATE_ERR_BAD_TYPE',['../group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580a58047e166925e45fd901f4662e89659e',1,'lvtk']]],
+  ['state_5ferr_5fno_5ffeature',['STATE_ERR_NO_FEATURE',['../group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580a8d21ea3aa44129e45fde19272318505f',1,'lvtk']]],
+  ['state_5ferr_5fno_5fproperty',['STATE_ERR_NO_PROPERTY',['../group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580ab0de39d15af39390cd784f32f07c6b6a',1,'lvtk']]],
+  ['state_5ferr_5funknown',['STATE_ERR_UNKNOWN',['../group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580aa3e65bfda39f6f72d1233cd0f8e37c94',1,'lvtk']]],
+  ['state_5fis_5fnative',['STATE_IS_NATIVE',['../group__state.html#ggab1fb0be3fed9af2c29f1e9ebfd568d0ba35a681380022a8c6e13fc89239b8d2a5',1,'lvtk']]],
+  ['state_5fis_5fpod',['STATE_IS_POD',['../group__state.html#ggab1fb0be3fed9af2c29f1e9ebfd568d0ba5597353c13b36f05e8612ad219abe938',1,'lvtk']]],
+  ['state_5fis_5fportable',['STATE_IS_PORTABLE',['../group__state.html#ggab1fb0be3fed9af2c29f1e9ebfd568d0ba56cc0baaaaecd1dd8851ca0b95720fd4',1,'lvtk']]],
+  ['state_5fsuccess',['STATE_SUCCESS',['../group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580a95fdd6b02cbc698e4bd1a4eafe1661ff',1,'lvtk']]],
+  ['stateflags',['StateFlags',['../group__state.html#gab1fb0be3fed9af2c29f1e9ebfd568d0b',1,'lvtk']]],
   ['stateretrieve',['StateRetrieve',['../structlvtk_1_1StateRetrieve.html',1,'lvtk']]],
-  ['statestore',['StateStore',['../structlvtk_1_1StateStore.html',1,'lvtk']]],
-  ['subjects',['subjects',['../classlvtk_1_1DynManifest.html#a4a46550eed6220ceb347818e5fbef690',1,'lvtk::DynManifest']]]
+  ['statestatus',['StateStatus',['../group__state.html#ga03ca319be3bdddb06bb83e7fc6e69580',1,'lvtk']]],
+  ['statestore',['StateStore',['../structlvtk_1_1StateStore.html',1,'lvtk']]]
 ];

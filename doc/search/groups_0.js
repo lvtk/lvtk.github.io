@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plugin_20interfaces',['Plugin Interfaces',['../group__interfaces.html',1,'']]]
+  ['atom',['Atom',['../group__atom.html',1,'']]]
 ];

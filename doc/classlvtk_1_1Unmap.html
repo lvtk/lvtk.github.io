@@ -73,20 +73,23 @@ $(function() {
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classlvtk_1_1Unmap-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Unmap Class Reference</div>  </div>
+<div class="title">Unmap Class Reference<div class="ingroups"><a class="el" href="group__urid.html">URID</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;lvtk/ext/urid.hpp&gt;</code></p>
+<p>LV2_URID_Unmap wrapper.  
+ <a href="classlvtk_1_1Unmap.html#details">More...</a></p>
+
+<p><code>#include &lt;lvtk/unmap.hpp&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Unmap:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlvtk_1_1Unmap__coll__graph.png" border="0" usemap="#Unmap_coll__map" alt="Collaboration graph"/></div>
 <map name="Unmap_coll__map" id="Unmap_coll__map">
-<area shape="rect"  title=" " alt="" coords="81,341,146,367"/>
+<area shape="rect"  title="LV2_URID_Unmap wrapper." alt="" coords="81,341,146,367"/>
 <area shape="rect"  href="structlvtk_1_1FeatureData.html" title=" " alt="" coords="29,253,198,292"/>
 <area shape="rect"  title="STL class." alt="" coords="133,80,187,105"/>
-<area shape="rect"  href="structlvtk_1_1FeatureData.html" title=" " alt="" coords="5,167,133,192"/>
+<area shape="rect"  href="structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="5,167,133,192"/>
 <area shape="rect"  title="STL class." alt="" coords="89,5,231,31"/>
 <area shape="rect"  title=" " alt="" coords="50,80,89,105"/>
 </map>
@@ -106,20 +109,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77b0a63df551edd4a415d7ee566fa468"><td class="memItemLeft" align="right" valign="top"><a id="a77b0a63df551edd4a415d7ee566fa468"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Unmap</b> (const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;feature)</td></tr>
 <tr class="separator:a77b0a63df551edd4a415d7ee566fa468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00119c80a0105eaa7adc80a62d269c71"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Unmap.html#a00119c80a0105eaa7adc80a62d269c71">unmap</a> (URID urid) const</td></tr>
-<tr class="separator:a00119c80a0105eaa7adc80a62d269c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a302dcdfe47baef0dd69d9366522b589e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Unmap.html#a302dcdfe47baef0dd69d9366522b589e">operator()</a> (const URID urid) const</td></tr>
-<tr class="separator:a302dcdfe47baef0dd69d9366522b589e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a7e80f1e91d6839f3548b784614e7e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Unmap.html#a42a7e80f1e91d6839f3548b784614e7e">unmap</a> (uint32_t urid) const</td></tr>
+<tr class="memdesc:a42a7e80f1e91d6839f3548b784614e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap a URID to string.  <a href="#a42a7e80f1e91d6839f3548b784614e7e">More...</a><br /></td></tr>
+<tr class="separator:a42a7e80f1e91d6839f3548b784614e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaebbc021883dad2abf44f2a068f5f10"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Unmap.html#adaebbc021883dad2abf44f2a068f5f10">operator()</a> (const uint32_t urid) const</td></tr>
+<tr class="separator:adaebbc021883dad2abf44f2a068f5f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ec348b5869f037436b01905de9fe3ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#a8ec348b5869f037436b01905de9fe3ed">is_for</a> (const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:a8ec348b5869f037436b01905de9fe3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the passed feature is for this Feature Data.  <a href="#a8ec348b5869f037436b01905de9fe3ed">More...</a><br /></td></tr>
 <tr class="separator:a8ec348b5869f037436b01905de9fe3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34d5431a0f665071d23983d5287ba09b"><td class="memItemLeft" align="right" valign="top">data_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#a34d5431a0f665071d23983d5287ba09b">c_obj</a> () const</td></tr>
 <tr class="separator:a34d5431a0f665071d23983d5287ba09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1034ac97e0c9c02559c0ba571810dee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#ab1034ac97e0c9c02559c0ba571810dee">set_feature</a> (const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;feature)</td></tr>
-<tr class="separator:ab1034ac97e0c9c02559c0ba571810dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941335f65247cea43e744ae5beec9a8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#a941335f65247cea43e744ae5beec9a8e">set_feature</a> (const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;feature)</td></tr>
+<tr class="memdesc:a941335f65247cea43e744ae5beec9a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the data from a feature.  <a href="#a941335f65247cea43e744ae5beec9a8e">More...</a><br /></td></tr>
+<tr class="separator:a941335f65247cea43e744ae5beec9a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7e7cc6939e79816b9e7adfe68d5fdfd2"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#a7e7cc6939e79816b9e7adfe68d5fdfd2">URI</a></td></tr>
+<tr class="memitem:a7e7cc6939e79816b9e7adfe68d5fdfd2"><td class="memItemLeft" align="right" valign="top"><a id="a7e7cc6939e79816b9e7adfe68d5fdfd2"></a>
+const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#a7e7cc6939e79816b9e7adfe68d5fdfd2">URI</a></td></tr>
+<tr class="memdesc:a7e7cc6939e79816b9e7adfe68d5fdfd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A uri for this data. <br /></td></tr>
 <tr class="separator:a7e7cc6939e79816b9e7adfe68d5fdfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -129,7 +137,7 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
 <tr class="separator:acd82e7f20cbb85b37fdffbbabb46b195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>LV2_URID_Unmap wrapper </p>
+<div class="textblock"><p>LV2_URID_Unmap wrapper. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a34d5431a0f665071d23983d5287ba09b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34d5431a0f665071d23983d5287ba09b">&#9670;&nbsp;</a></span>c_obj()</h2>
@@ -180,7 +188,9 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns true if the passed feature is for this <a class="el" href="structlvtk_1_1Feature.html">Feature</a> Data </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Returns true if the passed feature is for this Feature Data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">feature</td><td>The feature to check </td></tr>
   </table>
@@ -189,8 +199,8 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
 
 </div>
 </div>
-<a id="a302dcdfe47baef0dd69d9366522b589e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a302dcdfe47baef0dd69d9366522b589e">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="adaebbc021883dad2abf44f2a068f5f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaebbc021883dad2abf44f2a068f5f10">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +211,7 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
         <tr>
           <td class="memname">std::string operator() </td>
           <td>(</td>
-          <td class="paramtype">const URID&#160;</td>
+          <td class="paramtype">const uint32_t&#160;</td>
           <td class="paramname"><em>urid</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -212,12 +222,12 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlvtk_1_1Unmap.html#a00119c80a0105eaa7adc80a62d269c71">unmap</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>unmap </dd></dl>
 
 </div>
 </div>
-<a id="ab1034ac97e0c9c02559c0ba571810dee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1034ac97e0c9c02559c0ba571810dee">&#9670;&nbsp;</a></span>set_feature()</h2>
+<a id="a941335f65247cea43e744ae5beec9a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a941335f65247cea43e744ae5beec9a8e">&#9670;&nbsp;</a></span>set_feature()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +236,7 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void set_feature </td>
+          <td class="memname">bool set_feature </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;&#160;</td>
           <td class="paramname"><em>feature</em></td><td>)</td>
@@ -239,17 +249,19 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the data from a feature </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Sets the data from a feature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">feature</td><td>The <a class="el" href="structlvtk_1_1Feature.html">Feature</a> to check and set </td></tr>
+    <tr><td class="paramname">feature</td><td>The Feature to check and set </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a00119c80a0105eaa7adc80a62d269c71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00119c80a0105eaa7adc80a62d269c71">&#9670;&nbsp;</a></span>unmap()</h2>
+<a id="a42a7e80f1e91d6839f3548b784614e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a7e80f1e91d6839f3548b784614e7e">&#9670;&nbsp;</a></span>unmap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +272,7 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
         <tr>
           <td class="memname">std::string unmap </td>
           <td>(</td>
-          <td class="paramtype">URID&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>urid</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -271,7 +283,9 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classlvtk_1_1Unmap.html">Unmap</a> a URID to string </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Unmap a URID to string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">urid</td><td>The URID integer to unmap </td></tr>
   </table>
@@ -280,37 +294,13 @@ data_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7e7cc6939e79816b9e7adfe68d5fdfd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e7cc6939e79816b9e7adfe68d5fdfd2">&#9670;&nbsp;</a></span>URI</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string URI</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A uri for this data </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>urid.hpp</li>
+<li>unmap.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

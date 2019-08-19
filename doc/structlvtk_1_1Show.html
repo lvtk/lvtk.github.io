@@ -71,42 +71,49 @@ $(function() {
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="structlvtk_1_1Show-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Show&lt; I &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__uinterfaces.html">UI Interfaces</a></div></div>  </div>
+<div class="title">Show&lt; I &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__ui.html">UI</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;show.hpp&gt;</code></p>
+<p>Adds LV2UI_Show support to your UI instance.  
+ <a href="structlvtk_1_1Show.html#details">More...</a></p>
+
+<p><code>#include &lt;lvtk/ext/worker.hpp&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Show&lt; I &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="structlvtk_1_1Show__coll__graph.png" border="0" usemap="#Show_3_01I_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="Show_3_01I_01_4_coll__map" id="Show_3_01I_01_4_coll__map">
-<area shape="rect"  title=" " alt="" coords="15,152,96,177"/>
-<area shape="rect"  href="structlvtk_1_1Idle.html" title=" " alt="" coords="21,79,90,104"/>
-<area shape="rect"  href="structlvtk_1_1Interface.html" title=" " alt="" coords="5,5,105,31"/>
+<area shape="rect"  title="Adds LV2UI_Show support to your UI instance." alt="" coords="18,152,99,177"/>
+<area shape="rect"  href="structlvtk_1_1Idle.html" title="Adds idle interface to your UI instance." alt="" coords="24,79,93,104"/>
+<area shape="rect"  href="structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,5,112,31"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a04dcaa0855f21490969373963808266f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Show.html#a04dcaa0855f21490969373963808266f">show</a> ()</td></tr>
+<tr class="memdesc:a04dcaa0855f21490969373963808266f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the host to show your UI.  <a href="#a04dcaa0855f21490969373963808266f">More...</a><br /></td></tr>
 <tr class="separator:a04dcaa0855f21490969373963808266f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a877e7fb1cda3173edde8944f4df44ba2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Show.html#a877e7fb1cda3173edde8944f4df44ba2">hide</a> ()</td></tr>
+<tr class="memdesc:a877e7fb1cda3173edde8944f4df44ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the host to hide your UI.  <a href="#a877e7fb1cda3173edde8944f4df44ba2">More...</a><br /></td></tr>
 <tr class="separator:a877e7fb1cda3173edde8944f4df44ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae732ab34575e66bc0a7bb16e51da07be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Idle.html#ae732ab34575e66bc0a7bb16e51da07be">idle</a> ()</td></tr>
+<tr class="memdesc:ae732ab34575e66bc0a7bb16e51da07be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called repeatedly by the host to drive your UI.  <a href="#ae732ab34575e66bc0a7bb16e51da07be">More...</a><br /></td></tr>
 <tr class="separator:ae732ab34575e66bc0a7bb16e51da07be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2148dc6784db96d3d85ec3f13b31f55e"><td class="memItemLeft" align="right" valign="top"><a id="a2148dc6784db96d3d85ec3f13b31f55e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>map_extension_data</b> (ExtensionMap &amp;dmap)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>map_extension_data</b> (<a class="el" href="group__lvtk.html#gad19d0ba17870103c6095d3be32644329">ExtensionMap</a> &amp;dmap)</td></tr>
 <tr class="separator:a2148dc6784db96d3d85ec3f13b31f55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class I&gt;<br />
 struct lvtk::Show&lt; I &gt;</h3>
 
-<p>Adds LV2UI_Show support to your UI instance. This interface inherits from <a class="el" href="structlvtk_1_1Idle.html">Idle</a>. In other words, don't use <a class="el" href="structlvtk_1_1Idle.html">Idle</a> + <a class="el" href="structlvtk_1_1Show.html">Show</a> together, just use <a class="el" href="structlvtk_1_1Show.html">Show</a>. </p>
+<p>Adds LV2UI_Show support to your UI instance. </p>
+<p>This interface inherits from Idle. In other words, don't use Idle + Show together, just use Show. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a877e7fb1cda3173edde8944f4df44ba2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a877e7fb1cda3173edde8944f4df44ba2">&#9670;&nbsp;</a></span>hide()</h2>
@@ -130,7 +137,9 @@ struct lvtk::Show&lt; I &gt;</h3>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called by the host to hide your UI. Return non-zero on error </p>
+
+<p>Called by the host to hide your UI. </p>
+<p>Return non-zero on error </p>
 
 </div>
 </div>
@@ -156,7 +165,9 @@ struct lvtk::Show&lt; I &gt;</h3>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called repeatedly by the host to drive your UI. Return non-zero to stop receiving callbacks. </p>
+
+<p>Called repeatedly by the host to drive your UI. </p>
+<p>Return non-zero to stop receiving callbacks. </p>
 
 </div>
 </div>
@@ -182,7 +193,9 @@ struct lvtk::Show&lt; I &gt;</h3>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called by the host to show your UI. Return non-zero on error </p>
+
+<p>Called by the host to show your UI. </p>
+<p>Return non-zero on error </p>
 
 </div>
 </div>
@@ -192,7 +205,7 @@ struct lvtk::Show&lt; I &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

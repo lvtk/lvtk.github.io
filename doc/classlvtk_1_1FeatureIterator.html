@@ -70,21 +70,25 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classlvtk_1_1FeatureIterator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">FeatureIterator Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">FeatureIterator Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__lvtk.html">Core</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Helper which makes iterating LV2_Features easy.  
+ <a href="classlvtk_1_1FeatureIterator.html#details">More...</a></p>
 
 <p><code>#include &lt;lvtk.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a16cbc92aa5b838beb07da3650bb86550"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1FeatureIterator.html#a16cbc92aa5b838beb07da3650bb86550">FeatureIterator</a> (const LV2_Feature *const *features)</td></tr>
+<tr class="memdesc:a16cbc92aa5b838beb07da3650bb86550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate the given feature array.  <a href="#a16cbc92aa5b838beb07da3650bb86550">More...</a><br /></td></tr>
 <tr class="separator:a16cbc92aa5b838beb07da3650bb86550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38796a2ceaf1b6a2c182bc1c524a72b3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1FeatureIterator.html#a38796a2ceaf1b6a2c182bc1c524a72b3">next</a> ()</td></tr>
-<tr class="separator:a38796a2ceaf1b6a2c182bc1c524a72b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ff88a7c6745d9eef57c44554f56bc5"><td class="memItemLeft" align="right" valign="top">const LV2_Feature *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1FeatureIterator.html#a82ff88a7c6745d9eef57c44554f56bc5">next</a> () const</td></tr>
+<tr class="separator:a82ff88a7c6745d9eef57c44554f56bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Helper which makes iterating LV2_Features easy </p>
+<div class="textblock"><p>Helper which makes iterating LV2_Features easy. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a16cbc92aa5b838beb07da3650bb86550"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16cbc92aa5b838beb07da3650bb86550">&#9670;&nbsp;</a></span>FeatureIterator()</h2>
@@ -109,7 +113,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Iterate the given feature array </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Iterate the given feature array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">features</td><td>The LV2_Feature array </td></tr>
   </table>
@@ -119,8 +125,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a38796a2ceaf1b6a2c182bc1c524a72b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38796a2ceaf1b6a2c182bc1c524a72b3">&#9670;&nbsp;</a></span>next()</h2>
+<a id="a82ff88a7c6745d9eef57c44554f56bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ff88a7c6745d9eef57c44554f56bc5">&#9670;&nbsp;</a></span>next()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,10 +135,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structlvtk_1_1Feature.html">Feature</a>* next </td>
+          <td class="memname">const LV2_Feature* next </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -151,7 +157,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

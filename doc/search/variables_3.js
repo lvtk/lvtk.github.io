@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plugin',['plugin',['../structlvtk_1_1InstanceArgs.html#ab17f8671317bdac8bc2678b2bb7bead9',1,'lvtk::InstanceArgs']]]
+  ['map',['map',['../structlvtk_1_1URID.html#ac9becb8e2f80125547c8cc8f9d56b7ab',1,'lvtk::URID']]]
 ];

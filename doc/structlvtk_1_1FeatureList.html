@@ -71,9 +71,12 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structlvtk_1_1FeatureList-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">FeatureList Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">FeatureList Struct Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__lvtk.html">Core</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A Vector of Features.  
+ <a href="structlvtk_1_1FeatureList.html#details">More...</a></p>
 
 <p><code>#include &lt;lvtk.hpp&gt;</code></p>
 <div class="dynheader">
@@ -81,7 +84,7 @@ Collaboration diagram for FeatureList:</div>
 <div class="dyncontent">
 <div class="center"><img src="structlvtk_1_1FeatureList__coll__graph.png" border="0" usemap="#FeatureList_coll__map" alt="Collaboration graph"/></div>
 <map name="FeatureList_coll__map" id="FeatureList_coll__map">
-<area shape="rect"  title=" " alt="" coords="25,167,113,192"/>
+<area shape="rect"  title="A Vector of Features." alt="" coords="25,167,113,192"/>
 <area shape="rect"  title="STL class." alt="" coords="5,92,132,117"/>
 <area shape="rect"  title=" " alt="" coords="49,5,88,31"/>
 </map>
@@ -89,12 +92,18 @@ Collaboration diagram for FeatureList:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad48226e5fa17f672419dcab91cba622c"><td class="memItemLeft" align="right" valign="top"><a id="ad48226e5fa17f672419dcab91cba622c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FeatureList</b> (const <a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> &amp;o)</td></tr>
+<tr class="memitem:aee8672328251abeac0fb8b7afced96d6"><td class="memItemLeft" align="right" valign="top"><a id="aee8672328251abeac0fb8b7afced96d6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureList.html#aee8672328251abeac0fb8b7afced96d6">FeatureList</a> ()=default</td></tr>
+<tr class="memdesc:aee8672328251abeac0fb8b7afced96d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty feature list. <br /></td></tr>
+<tr class="separator:aee8672328251abeac0fb8b7afced96d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48226e5fa17f672419dcab91cba622c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureList.html#ad48226e5fa17f672419dcab91cba622c">FeatureList</a> (const <a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> &amp;o)</td></tr>
+<tr class="memdesc:ad48226e5fa17f672419dcab91cba622c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy features.  <a href="#ad48226e5fa17f672419dcab91cba622c">More...</a><br /></td></tr>
 <tr class="separator:ad48226e5fa17f672419dcab91cba622c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ffac31e65d8a440f76d4131c927c6e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureList.html#a8ffac31e65d8a440f76d4131c927c6e7">FeatureList</a> (const LV2_Feature *const *features)</td></tr>
+<tr class="memdesc:a8ffac31e65d8a440f76d4131c927c6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contstruct from raw LV2_Feature array.  <a href="#a8ffac31e65d8a440f76d4131c927c6e7">More...</a><br /></td></tr>
 <tr class="separator:a8ffac31e65d8a440f76d4131c927c6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52732ad0c68274d1538498bf0d7af562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureList.html#a52732ad0c68274d1538498bf0d7af562">get_uris</a> (std::vector&lt; std::string &gt; &amp;uris) const</td></tr>
+<tr class="memdesc:a52732ad0c68274d1538498bf0d7af562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate a string vector with URIs contained in this list.  <a href="#a52732ad0c68274d1538498bf0d7af562">More...</a><br /></td></tr>
 <tr class="separator:a52732ad0c68274d1538498bf0d7af562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -105,12 +114,41 @@ T&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b></td></tr>
 <tr class="separator:af400dbe3fe1572c567f882190c772196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A Vector of Features.</p>
-<p>This is used to prepare LV2_Feature arrays for use by instances and mixins during instantiation of Plugins and UIs.</p>
+<div class="textblock"><p>A Vector of Features. </p>
+<p>This is used to prepare LV2_Feature arrays for use by instances and extensions during instantiation of Plugins and UIs.</p>
 <dl class="section note"><dt>Note</dt><dd>This usually contains external data from the host and should never itself be referenced by your plugin </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad48226e5fa17f672419dcab91cba622c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48226e5fa17f672419dcab91cba622c">&#9670;&nbsp;</a></span>FeatureList() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy features. </p>
+<p>Data pointers are referenced </p>
+
+</div>
+</div>
 <a id="a8ffac31e65d8a440f76d4131c927c6e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ffac31e65d8a440f76d4131c927c6e7">&#9670;&nbsp;</a></span>FeatureList()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ffac31e65d8a440f76d4131c927c6e7">&#9670;&nbsp;</a></span>FeatureList() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,7 +170,14 @@ T&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Contstruct from raw LV2_Feature array </p>
+
+<p>Contstruct from raw LV2_Feature array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature</td><td>LV2_Feature array to reference </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -160,7 +205,14 @@ T&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Populate a string vector with URIs contained in this list </p>
+
+<p>Populate a string vector with URIs contained in this list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uris</td><td>The vector to fill </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -170,7 +222,7 @@ T&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

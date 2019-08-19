@@ -70,22 +70,27 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structlvtk_1_1WorkerRespond-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">WorkerRespond Struct Reference</div>  </div>
+<div class="title">WorkerRespond Struct Reference<div class="ingroups"><a class="el" href="group__worker.html">Worker</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;worker.hpp&gt;</code></p>
+<p>Worker reponse function.  
+ <a href="structlvtk_1_1WorkerRespond.html#details">More...</a></p>
+
+<p><code>#include &lt;lvtk/scheduler.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae371452b32d96d46a4eb6ec9a16edf48"><td class="memItemLeft" align="right" valign="top"><a id="ae371452b32d96d46a4eb6ec9a16edf48"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>WorkerRespond</b> (LV2_Handle instance, LV2_Worker_Respond_Function wrfunc, LV2_Worker_Respond_Handle handle)</td></tr>
 <tr class="separator:ae371452b32d96d46a4eb6ec9a16edf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0138a5907eb846a718e9eb8e14bce05"><td class="memItemLeft" align="right" valign="top">WorkerStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1WorkerRespond.html#ae0138a5907eb846a718e9eb8e14bce05">operator()</a> (uint32_t size, const void *data) const</td></tr>
+<tr class="memitem:ae0138a5907eb846a718e9eb8e14bce05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1WorkerRespond.html#ae0138a5907eb846a718e9eb8e14bce05">operator()</a> (uint32_t size, const void *data) const</td></tr>
+<tr class="memdesc:ae0138a5907eb846a718e9eb8e14bce05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the worker retrieval functor.  <a href="#ae0138a5907eb846a718e9eb8e14bce05">More...</a><br /></td></tr>
 <tr class="separator:ae0138a5907eb846a718e9eb8e14bce05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="structlvtk_1_1Worker.html">Worker</a> reponse. This wraps an LV2_Worker_Respond_Function and exeucutes via operator () </p>
+<div class="textblock"><p>Worker reponse function. </p>
+<p>This wraps an LV2_Worker_Respond_Function. It is passed to the work method on your Instance </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae0138a5907eb846a718e9eb8e14bce05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0138a5907eb846a718e9eb8e14bce05">&#9670;&nbsp;</a></span>operator()()</h2>
@@ -97,7 +102,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">WorkerStatus operator() </td>
+          <td class="memname"><a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a> operator() </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>size</em>, </td>
@@ -120,7 +125,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Execute the worker retrieval functor. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Execute the worker retrieval functor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td></td></tr>
     <tr><td class="paramname">data</td><td></td></tr>
@@ -132,12 +139,12 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>ext/worker.hpp</li>
+<li>scheduler.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

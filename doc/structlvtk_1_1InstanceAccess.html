@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LV2 Toolkit: InstanceAccess Struct Reference</title>
+<title>LV2 Toolkit: InstanceAccess&lt; I &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,29 +68,48 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="structlvtk_1_1InstanceAccess-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">InstanceAccess Struct Reference</div>  </div>
+<div class="title">InstanceAccess&lt; I &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__instance__access.html">Instance Access</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;lvtk/ext/instance_access.hpp&gt;</code></p>
+<p>Adds LV2 Instance Access support to your UI.  
+ <a href="structlvtk_1_1InstanceAccess.html#details">More...</a></p>
+
+<p><code>#include &lt;instance_access.hpp&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for InstanceAccess&lt; I &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="structlvtk_1_1InstanceAccess__coll__graph.png" border="0" usemap="#InstanceAccess_3_01I_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="InstanceAccess_3_01I_01_4_coll__map" id="InstanceAccess_3_01I_01_4_coll__map">
+<area shape="rect"  title="Adds LV2 Instance Access support to your UI." alt="" coords="20,241,161,267"/>
+<area shape="rect"  href="structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="39,167,142,192"/>
+<area shape="rect"  href="structlvtk_1_1Extension.html" title=" " alt="" coords="5,92,176,117"/>
+<area shape="rect"  href="structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="37,5,144,31"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3385747ede8999a32295a899d368aa1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1InstanceAccess.html#a3385747ede8999a32295a899d368aa1c">InstanceAccess</a> ()=default</td></tr>
-<tr class="separator:a3385747ede8999a32295a899d368aa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f543c86fb477a8bc2113420fb1a2bfc"><td class="memItemLeft" align="right" valign="top">Handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1InstanceAccess.html#a0f543c86fb477a8bc2113420fb1a2bfc">get_instance</a> () const</td></tr>
-<tr class="separator:a0f543c86fb477a8bc2113420fb1a2bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1034ac97e0c9c02559c0ba571810dee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1InstanceAccess.html#ab1034ac97e0c9c02559c0ba571810dee">set_feature</a> (const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;feature)</td></tr>
-<tr class="separator:ab1034ac97e0c9c02559c0ba571810dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bbfbdd7f26051168b545d56fa9e012e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lvtk.html#ga6c8769b63afca5cebd52888b0d43bfe9">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1InstanceAccess.html#a3bbfbdd7f26051168b545d56fa9e012e">plugin_instance</a> () const</td></tr>
+<tr class="separator:a3bbfbdd7f26051168b545d56fa9e012e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a66ba5287b5b0b7f27b3c67526a708201"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1NullExtension.html#a66ba5287b5b0b7f27b3c67526a708201">map_extension_data</a> (<a class="el" href="group__lvtk.html#gad19d0ba17870103c6095d3be32644329">ExtensionMap</a> &amp;)</td></tr>
+<tr class="memdesc:a66ba5287b5b0b7f27b3c67526a708201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy extension data handler for interfaces which do not provide extension data.  <a href="#a66ba5287b5b0b7f27b3c67526a708201">More...</a><br /></td></tr>
+<tr class="separator:a66ba5287b5b0b7f27b3c67526a708201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Wrap the <a class="el" href="classlvtk_1_1Instance.html">Instance</a> Access host feature.</p>
-<p>Use these on the stack and all <a class="el" href="structlvtk_1_1InstanceAccess.html#ab1034ac97e0c9c02559c0ba571810dee">set_feature()</a> passing the appropriate feature. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3385747ede8999a32295a899d368aa1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3385747ede8999a32295a899d368aa1c">&#9670;&nbsp;</a></span>InstanceAccess()</h2>
+<div class="textblock"><h3>template&lt;class I&gt;<br />
+struct lvtk::InstanceAccess&lt; I &gt;</h3>
+
+<p>Adds LV2 Instance Access support to your UI. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a66ba5287b5b0b7f27b3c67526a708201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ba5287b5b0b7f27b3c67526a708201">&#9670;&nbsp;</a></span>map_extension_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -99,25 +118,27 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structlvtk_1_1InstanceAccess.html">InstanceAccess</a> </td>
+          <td class="memname">static void map_extension_data </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="group__lvtk.html#gad19d0ba17870103c6095d3be32644329">ExtensionMap</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>ctor </p>
+
+<p>Dummy extension data handler for interfaces which do not provide extension data. </p>
+<dl class="section see"><dt>See also</dt><dd>BufSize </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0f543c86fb477a8bc2113420fb1a2bfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f543c86fb477a8bc2113420fb1a2bfc">&#9670;&nbsp;</a></span>get_instance()</h2>
+<a id="a3bbfbdd7f26051168b545d56fa9e012e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bbfbdd7f26051168b545d56fa9e012e">&#9670;&nbsp;</a></span>plugin_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +147,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Handle get_instance </td>
+          <td class="memname"><a class="el" href="group__lvtk.html#ga6c8769b63afca5cebd52888b0d43bfe9">Handle</a> plugin_instance </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -138,34 +159,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the plugin instance </p><dl class="section return"><dt>Returns</dt><dd>The LV2 plugin instance handle or nullptr if not available </dd></dl>
-
-</div>
-</div>
-<a id="ab1034ac97e0c9c02559c0ba571810dee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1034ac97e0c9c02559c0ba571810dee">&#9670;&nbsp;</a></span>set_feature()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void set_feature </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;&#160;</td>
-          <td class="paramname"><em>feature</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Assign the LV2_Handle by LV2 <a class="el" href="structlvtk_1_1Feature.html">Feature</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>the LV2_Handle of the plugin if available, otherwise nullptr </dd></dl>
 
 </div>
 </div>
@@ -175,7 +169,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

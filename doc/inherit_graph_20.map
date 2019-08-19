@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,44,31"/>
-<area shape="rect" id="node2" href="$classlvtk_1_1Instance.html" title=" " alt="" coords="92,5,212,31"/>
+<area shape="rect" id="node1" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="5,5,185,44"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1Scheduler.html" title="Schedule jobs with the host." alt="" coords="233,12,315,37"/>
 </map>

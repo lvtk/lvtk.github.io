@@ -5,6 +5,6 @@ var searchData=
   ['body',['body',['../structlvtk_1_1Atom.html#a0ca9a717d8c0092a0aa01db110e2633e',1,'lvtk::Atom']]],
   ['buffer_5fdetails',['buffer_details',['../structlvtk_1_1BufSize.html#ae1538bf6a177bc0ade63f6fd89e6341c',1,'lvtk::BufSize']]],
   ['bufferdetails',['BufferDetails',['../structlvtk_1_1BufferDetails.html',1,'lvtk']]],
-  ['bufsize',['BufSize',['../structlvtk_1_1BufSize.html',1,'lvtk']]],
-  ['bundle',['bundle',['../structlvtk_1_1InstanceArgs.html#ab3697ffeb67dc9263ddbfd42301f1d7f',1,'lvtk::InstanceArgs']]]
+  ['bufsize',['BufSize',['../structlvtk_1_1BufSize.html',1,'BufSize&lt; I &gt;'],['../group__bufsize.html',1,'(Global Namespace)']]],
+  ['bundle',['bundle',['../structlvtk_1_1Args.html#ab3697ffeb67dc9263ddbfd42301f1d7f',1,'lvtk::Args']]]
 ];

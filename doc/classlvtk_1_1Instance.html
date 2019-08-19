@@ -68,13 +68,16 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classlvtk_1_1Instance-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Instance&lt; S, E &gt; Class Template Reference</div>  </div>
+<div class="title">Instance&lt; S, E &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__plugin.html">Plugin</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for plugin isntances.  
+ <a href="classlvtk_1_1Instance.html#details">More...</a></p>
 
 <p><code>#include &lt;lvtk/instance.hpp&gt;</code></p>
 <div class="dynheader">
@@ -82,42 +85,39 @@ Collaboration diagram for Instance&lt; S, E &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlvtk_1_1Instance__coll__graph.png" border="0" usemap="#Instance_3_01S_00_01E_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="Instance_3_01S_00_01E_01_4_coll__map" id="Instance_3_01S_00_01E_01_4_coll__map">
-<area shape="rect"  title=" " alt="" coords="75,428,195,453"/>
-<area shape="rect"  title=" " alt="" coords="5,341,67,367"/>
-<area shape="rect"  href="classlvtk_1_1AtomForge.html" title=" " alt="" coords="91,341,179,367"/>
-<area shape="rect"  title=" " alt="" coords="63,260,188,285"/>
-<area shape="rect"  href="classlvtk_1_1Map.html" title=" " alt="" coords="242,341,289,367"/>
-<area shape="rect"  href="structlvtk_1_1FeatureData.html" title=" " alt="" coords="212,253,381,292"/>
-<area shape="rect"  title="STL class." alt="" coords="307,80,361,105"/>
-<area shape="rect"  href="structlvtk_1_1FeatureData.html" title=" " alt="" coords="179,167,307,192"/>
-<area shape="rect"  title="STL class." alt="" coords="263,5,404,31"/>
-<area shape="rect"  title=" " alt="" coords="224,80,262,105"/>
+<area shape="rect"  title="Base class for plugin isntances." alt="" coords="5,79,125,104"/>
+<area shape="rect"  title=" " alt="" coords="34,5,96,31"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa915dbba3f4c533c1adfb421bfe2543d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#aa915dbba3f4c533c1adfb421bfe2543d">Instance</a> (double sample_rate, const std::string &amp;bundle_path, const <a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> &amp;features)</td></tr>
-<tr class="separator:aa915dbba3f4c533c1adfb421bfe2543d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8011fcbeb5efeda20bd2dbffbbb70165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a8011fcbeb5efeda20bd2dbffbbb70165">activate</a> ()</td></tr>
+<tr class="memitem:a8011fcbeb5efeda20bd2dbffbbb70165"><td class="memItemLeft" align="right" valign="top"><a id="a8011fcbeb5efeda20bd2dbffbbb70165"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a8011fcbeb5efeda20bd2dbffbbb70165">activate</a> ()</td></tr>
+<tr class="memdesc:a8011fcbeb5efeda20bd2dbffbbb70165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to handle activate. <br /></td></tr>
 <tr class="separator:a8011fcbeb5efeda20bd2dbffbbb70165"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452872200ae81866626b80357f2dac7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a452872200ae81866626b80357f2dac7d">connect_port</a> (uint32_t, void *)</td></tr>
+<tr class="memitem:a452872200ae81866626b80357f2dac7d"><td class="memItemLeft" align="right" valign="top"><a id="a452872200ae81866626b80357f2dac7d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a452872200ae81866626b80357f2dac7d">connect_port</a> (uint32_t, void *)</td></tr>
+<tr class="memdesc:a452872200ae81866626b80357f2dac7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to handle connect_port. <br /></td></tr>
 <tr class="separator:a452872200ae81866626b80357f2dac7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a445749901df90090f5634fc1da0a92d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a445749901df90090f5634fc1da0a92d2">run</a> (uint32_t)</td></tr>
+<tr class="memitem:a445749901df90090f5634fc1da0a92d2"><td class="memItemLeft" align="right" valign="top"><a id="a445749901df90090f5634fc1da0a92d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a445749901df90090f5634fc1da0a92d2">run</a> (uint32_t)</td></tr>
+<tr class="memdesc:a445749901df90090f5634fc1da0a92d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to handle run. <br /></td></tr>
 <tr class="separator:a445749901df90090f5634fc1da0a92d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8308b4bb6079733f4b77ced9d46da7a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a8308b4bb6079733f4b77ced9d46da7a9">deactivate</a> ()</td></tr>
+<tr class="memitem:a8308b4bb6079733f4b77ced9d46da7a9"><td class="memItemLeft" align="right" valign="top"><a id="a8308b4bb6079733f4b77ced9d46da7a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a8308b4bb6079733f4b77ced9d46da7a9">deactivate</a> ()</td></tr>
+<tr class="memdesc:a8308b4bb6079733f4b77ced9d46da7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to handle deactivate. <br /></td></tr>
 <tr class="separator:a8308b4bb6079733f4b77ced9d46da7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b66d5e31b5dc18b314c8a68163263bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a4b66d5e31b5dc18b314c8a68163263bd">cleanup</a> ()</td></tr>
+<tr class="memitem:a4b66d5e31b5dc18b314c8a68163263bd"><td class="memItemLeft" align="right" valign="top"><a id="a4b66d5e31b5dc18b314c8a68163263bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html#a4b66d5e31b5dc18b314c8a68163263bd">cleanup</a> ()</td></tr>
+<tr class="memdesc:a4b66d5e31b5dc18b314c8a68163263bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to handle cleanup Will be called immediately before the instance is deleted. <br /></td></tr>
 <tr class="separator:a4b66d5e31b5dc18b314c8a68163263bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ac9becb8e2f80125547c8cc8f9d56b7ab"><td class="memItemLeft" align="right" valign="top"><a id="ac9becb8e2f80125547c8cc8f9d56b7ab"></a>
-<a class="el" href="classlvtk_1_1Map.html">Map</a>&#160;</td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
-<tr class="separator:ac9becb8e2f80125547c8cc8f9d56b7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15c7a1e346ca6185bbb2d845b662df3c"><td class="memItemLeft" align="right" valign="top"><a id="a15c7a1e346ca6185bbb2d845b662df3c"></a>
-<a class="el" href="classlvtk_1_1AtomForge.html">AtomForge</a>&#160;</td><td class="memItemRight" valign="bottom"><b>forge</b></td></tr>
-<tr class="separator:a15c7a1e346ca6185bbb2d845b662df3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a44ba278157a9b9b37126203abb317e8e"><td class="memItemLeft" align="right" valign="top"><a id="a44ba278157a9b9b37126203abb317e8e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> (const <a class="el" href="structlvtk_1_1Args.html">Args</a> &amp;args)</td></tr>
+<tr class="separator:a44ba278157a9b9b37126203abb317e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -129,202 +129,15 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Plugin&lt; S &gt;</b
 <div class="textblock"><h3>template&lt;class S, template&lt; class &gt; class... E&gt;<br />
 class lvtk::Instance&lt; S, E &gt;</h3>
 
-<p>Base class for plugin isntances</p>
-<p>Inherrit this and override it's methods to create a minimal LV2 <a class="el" href="classlvtk_1_1Plugin.html">Plugin</a>. Add interface mixins to extend functionality. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa915dbba3f4c533c1adfb421bfe2543d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa915dbba3f4c533c1adfb421bfe2543d">&#9670;&nbsp;</a></span>Instance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classlvtk_1_1Instance.html">Instance</a> </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>sample_rate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>bundle_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> &amp;&#160;</td>
-          <td class="paramname"><em>features</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Default instance constructor </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8011fcbeb5efeda20bd2dbffbbb70165"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8011fcbeb5efeda20bd2dbffbbb70165">&#9670;&nbsp;</a></span>activate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void activate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Override this to handle activate </p>
-
-</div>
-</div>
-<a id="a4b66d5e31b5dc18b314c8a68163263bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b66d5e31b5dc18b314c8a68163263bd">&#9670;&nbsp;</a></span>cleanup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cleanup </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Override this to handle cleanup Will be called immediately before the instance is deleted </p>
-
-</div>
-</div>
-<a id="a452872200ae81866626b80357f2dac7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a452872200ae81866626b80357f2dac7d">&#9670;&nbsp;</a></span>connect_port()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void connect_port </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Override this to handle connect_port </p>
-
-</div>
-</div>
-<a id="a8308b4bb6079733f4b77ced9d46da7a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8308b4bb6079733f4b77ced9d46da7a9">&#9670;&nbsp;</a></span>deactivate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void deactivate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Override this to handle deactivate </p>
-
-</div>
-</div>
-<a id="a445749901df90090f5634fc1da0a92d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a445749901df90090f5634fc1da0a92d2">&#9670;&nbsp;</a></span>run()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void run </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Override this to handle run </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<p>Base class for plugin isntances. </p>
+<p>Inherrit this and override it's methods to create a minimal LV2 Plugin. Add interface mixins to extend functionality. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>instance.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

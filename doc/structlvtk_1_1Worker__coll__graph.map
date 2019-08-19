@@ -1,4 +1,4 @@
 <map id="Worker&lt; I &gt;" name="Worker&lt; I &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="10,79,101,104"/>
-<area shape="rect" id="node2" href="$structlvtk_1_1Interface.html" title=" " alt="" coords="5,5,105,31"/>
+<area shape="rect" id="node1" title="Adds LV2 worker support to your instance." alt="" coords="13,79,104,104"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,5,112,31"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LV2 Toolkit: Options Struct Reference</title>
+<title>LV2 Toolkit: Options&lt; I &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,22 +66,139 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="structlvtk_1_1Options-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Options Struct Reference</div>  </div>
+<div class="title">Options&lt; I &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__options.html">Options</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="options_8hpp_source.html">lvtk/ext/options.hpp</a>&gt;</code></p>
+<p>Adds support for LV2 options on your instance.  
+ <a href="structlvtk_1_1Options.html#details">More...</a></p>
+
+<p><code>#include &lt;lvtk/ext/options.hpp&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Options&lt; I &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="structlvtk_1_1Options__coll__graph.png" border="0" usemap="#Options_3_01I_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="Options_3_01I_01_4_coll__map" id="Options_3_01I_01_4_coll__map">
+<area shape="rect"  title="Adds support for LV2 options on your instance." alt="" coords="12,79,106,104"/>
+<area shape="rect"  href="structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,5,112,31"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6630629c85324678f7e2822019b82898"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__options.html#ga0602b345dcdff7eef27c1da97f8c9bd3">Option</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Options.html#a6630629c85324678f7e2822019b82898">host_options</a> () const</td></tr>
+<tr class="separator:a6630629c85324678f7e2822019b82898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39526a24e8e9f4b5290efcf395c9aa64"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Options.html#a39526a24e8e9f4b5290efcf395c9aa64">get</a> (const <a class="el" href="group__options.html#ga0602b345dcdff7eef27c1da97f8c9bd3">Option</a> *options) const</td></tr>
+<tr class="memdesc:a39526a24e8e9f4b5290efcf395c9aa64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the given options.  <a href="#a39526a24e8e9f4b5290efcf395c9aa64">More...</a><br /></td></tr>
+<tr class="separator:a39526a24e8e9f4b5290efcf395c9aa64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad060ed3eda225a3909062068bce33886"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Options.html#ad060ed3eda225a3909062068bce33886">set</a> (const <a class="el" href="group__options.html#ga0602b345dcdff7eef27c1da97f8c9bd3">Option</a> *options) const</td></tr>
+<tr class="memdesc:ad060ed3eda225a3909062068bce33886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the given options.  <a href="#ad060ed3eda225a3909062068bce33886">More...</a><br /></td></tr>
+<tr class="separator:ad060ed3eda225a3909062068bce33886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The LV2 <a class="el" href="structlvtk_1_1Options.html">Options</a> <a class="el" href="structlvtk_1_1Feature.html">Feature</a> Mixin</p>
-<p>This mixin provides a callback handler for the LV2 <a class="el" href="structlvtk_1_1Options.html">Options</a> feature and hooks up the LV2_Options_Interface as extension data. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="options_8hpp_source.html">options.hpp</a></li>
+<div class="textblock"><h3>template&lt;class I&gt;<br />
+struct lvtk::Options&lt; I &gt;</h3>
+
+<p>Adds support for LV2 options on your instance. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a39526a24e8e9f4b5290efcf395c9aa64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39526a24e8e9f4b5290efcf395c9aa64">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t get </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__options.html#ga0602b345dcdff7eef27c1da97f8c9bd3">Option</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the given options. </p>
+<p>Each element of the passed options array MUST have type, subject, and key set. All other fields (size, type, value) MUST be initialised to zero, and are set to the option value if such an option is found.</p>
+<p>This function is in the "instantiation" LV2 threading class, so no other instance functions may be called concurrently.</p>
+<dl class="section return"><dt>Returns</dt><dd>Bitwise OR of OptionsStatus values. </dd></dl>
+
+</div>
+</div>
+<a id="a6630629c85324678f7e2822019b82898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6630629c85324678f7e2822019b82898">&#9670;&nbsp;</a></span>host_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group__options.html#ga0602b345dcdff7eef27c1da97f8c9bd3">Option</a>* host_options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Options provided by the host or nullptr if not available </dd></dl>
+
+</div>
+</div>
+<a id="ad060ed3eda225a3909062068bce33886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad060ed3eda225a3909062068bce33886">&#9670;&nbsp;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__options.html#ga0602b345dcdff7eef27c1da97f8c9bd3">Option</a> *&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the given options. </p>
+<p>This function is in the "instantiation" LV2 threading class, so no other instance functions may be called concurrently.</p>
+<dl class="section return"><dt>Returns</dt><dd>Bitwise OR of OptionsStatus values. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>options.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 02:26:52 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

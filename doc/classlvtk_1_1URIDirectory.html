@@ -70,25 +70,36 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classlvtk_1_1URIDirectory-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">URIDirectory Class Reference</div>  </div>
+<div class="title">URIDirectory Class Reference<div class="ingroups"><a class="el" href="group__urid.html">URID</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Maintains a map of Strings/Symbols to integers.  
+ <a href="classlvtk_1_1URIDirectory.html#details">More...</a></p>
 
 <p><code>#include &lt;lvtk/uri_directory.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a19a85305f21192048b7ead6d08f3de52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1URIDirectory.html#a19a85305f21192048b7ead6d08f3de52">URIDirectory</a> ()</td></tr>
+<tr class="memitem:a19a85305f21192048b7ead6d08f3de52"><td class="memItemLeft" align="right" valign="top"><a id="a19a85305f21192048b7ead6d08f3de52"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1URIDirectory.html#a19a85305f21192048b7ead6d08f3de52">URIDirectory</a> ()</td></tr>
+<tr class="memdesc:a19a85305f21192048b7ead6d08f3de52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty symbol map and initialized LV2 URID features. <br /></td></tr>
 <tr class="separator:a19a85305f21192048b7ead6d08f3de52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91c87b6776f6f884e0bf8b643855d1b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1URIDirectory.html#ae91c87b6776f6f884e0bf8b643855d1b">map</a> (const char *key)</td></tr>
+<tr class="memdesc:ae91c87b6776f6f884e0bf8b643855d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map a symbol/uri to an unsigned integer.  <a href="#ae91c87b6776f6f884e0bf8b643855d1b">More...</a><br /></td></tr>
 <tr class="separator:ae91c87b6776f6f884e0bf8b643855d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96c89ddb04dc4ec1cbd8b825c466cd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1URIDirectory.html#ae96c89ddb04dc4ec1cbd8b825c466cd3">contains</a> (const char *uri)</td></tr>
+<tr class="memdesc:ae96c89ddb04dc4ec1cbd8b825c466cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Containment test of a URI.  <a href="#ae96c89ddb04dc4ec1cbd8b825c466cd3">More...</a><br /></td></tr>
 <tr class="separator:ae96c89ddb04dc4ec1cbd8b825c466cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae01c2d6c5ac1aa6310c43371bdb50d94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1URIDirectory.html#ae01c2d6c5ac1aa6310c43371bdb50d94">contains</a> (uint32_t urid)</td></tr>
+<tr class="memdesc:ae01c2d6c5ac1aa6310c43371bdb50d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Containment test of a URID.  <a href="#ae01c2d6c5ac1aa6310c43371bdb50d94">More...</a><br /></td></tr>
 <tr class="separator:ae01c2d6c5ac1aa6310c43371bdb50d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba774305e620888fb73a918be20203d5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1URIDirectory.html#aba774305e620888fb73a918be20203d5">unmap</a> (uint32_t urid)</td></tr>
+<tr class="memdesc:aba774305e620888fb73a918be20203d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmap an already mapped id to its symbol.  <a href="#aba774305e620888fb73a918be20203d5">More...</a><br /></td></tr>
 <tr class="separator:aba774305e620888fb73a918be20203d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1URIDirectory.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top"><a id="ac8bb3912a3ce86b15842e79d0b421204"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1URIDirectory.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the URIDirectory. <br /></td></tr>
 <tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bbdee6c0e24f51c2300b9784692a39f"><td class="memItemLeft" align="right" valign="top">const LV2_Feature *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1URIDirectory.html#a3bbdee6c0e24f51c2300b9784692a39f">get_map_feature</a> () const</td></tr>
 <tr class="separator:a3bbdee6c0e24f51c2300b9784692a39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,62 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3eba581a2ef6ed3c4bc75b5d76e9ec2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Maintains a map of Strings/Symbols to integers</p>
-<p>This class also implements LV2 URID Map/Unmap features. <a class="el" href="classlvtk_1_1Instance.html">Instance</a> implementations don't need to use this. You can, however, use this in a LV2 host to easily provide URID map/unmaping features to plugins. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a19a85305f21192048b7ead6d08f3de52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19a85305f21192048b7ead6d08f3de52">&#9670;&nbsp;</a></span>URIDirectory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classlvtk_1_1URIDirectory.html">URIDirectory</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create an empty symbol map and initialized LV2 URID features </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac8bb3912a3ce86b15842e79d0b421204"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8bb3912a3ce86b15842e79d0b421204">&#9670;&nbsp;</a></span>clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Clear the <a class="el" href="classlvtk_1_1URIDirectory.html">URIDirectory</a> </p>
-
-</div>
-</div>
+<div class="textblock"><p>Maintains a map of Strings/Symbols to integers. </p>
+<p>This class also implements LV2 URID Map/Unmap features. Instance implementations don't need to use this. You can, however, use this in a LV2 host to easily provide URID map/unmaping features to plugins. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae96c89ddb04dc4ec1cbd8b825c466cd3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae96c89ddb04dc4ec1cbd8b825c466cd3">&#9670;&nbsp;</a></span>contains() <span class="overload">[1/2]</span></h2>
 
@@ -175,7 +133,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Containment test of a URI</p>
+
+<p>Containment test of a URI. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uri</td><td>The URI to test </td></tr>
@@ -209,7 +168,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Containment test of a URID</p>
+
+<p>Containment test of a URID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">urid</td><td>The URID to test </td></tr>
@@ -295,7 +255,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classlvtk_1_1Map.html">Map</a> a symbol/uri to an unsigned integer </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Map a symbol/uri to an unsigned integer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The symbol to map </td></tr>
   </table>
@@ -328,7 +290,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classlvtk_1_1Unmap.html">Unmap</a> an already mapped id to its symbol</p>
+
+<p>Unmap an already mapped id to its symbol. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">urid</td><td>The URID to unmap </td></tr>
@@ -345,7 +308,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

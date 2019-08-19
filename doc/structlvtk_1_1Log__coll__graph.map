@@ -1,12 +1,12 @@
 <map id="Log&lt; I &gt;" name="Log&lt; I &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="163,428,233,453"/>
-<area shape="rect" id="node2" href="$structlvtk_1_1NullInterface.html" title=" " alt="" coords="99,341,195,367"/>
-<area shape="rect" id="node3" href="$structlvtk_1_1Interface.html" title=" " alt="" coords="5,260,169,285"/>
-<area shape="rect" id="node4" href="$structlvtk_1_1Interface.html" title=" " alt="" coords="37,167,137,192"/>
-<area shape="rect" id="node5" href="$structlvtk_1_1Logger.html" title=" " alt="" coords="230,341,293,367"/>
-<area shape="rect" id="node6" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="193,253,352,292"/>
-<area shape="rect" id="node7" title="STL class." alt="" coords="320,80,374,105"/>
-<area shape="rect" id="node9" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="192,167,321,192"/>
-<area shape="rect" id="node8" title="STL class." alt="" coords="276,5,418,31"/>
-<area shape="rect" id="node10" title=" " alt="" coords="237,80,276,105"/>
+<area shape="rect" id="node1" title="Adds a Logger log to your instance." alt="" coords="169,428,239,453"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="100,341,203,367"/>
+<area shape="rect" id="node3" href="$structlvtk_1_1Extension.html" title=" " alt="" coords="5,260,176,285"/>
+<area shape="rect" id="node4" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="37,167,144,192"/>
+<area shape="rect" id="node5" href="$structlvtk_1_1Logger.html" title="Wrapper around LV2_Log_Log." alt="" coords="238,341,301,367"/>
+<area shape="rect" id="node6" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="200,253,359,292"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="329,80,383,105"/>
+<area shape="rect" id="node9" href="$structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="201,167,329,192"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="285,5,427,31"/>
+<area shape="rect" id="node10" title=" " alt="" coords="246,80,284,105"/>
 </map>

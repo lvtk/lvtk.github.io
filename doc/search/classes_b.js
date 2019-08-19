@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['resizeport',['ResizePort',['../structlvtk_1_1ResizePort.html',1,'lvtk']]]
+  ['plugin',['Plugin',['../classlvtk_1_1Plugin.html',1,'lvtk']]],
+  ['portresizer',['PortResizer',['../structlvtk_1_1PortResizer.html',1,'lvtk']]]
 ];

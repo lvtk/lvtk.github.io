@@ -71,31 +71,37 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classlvtk_1_1Plugin-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Plugin&lt; I &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">Plugin&lt; I &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__plugin.html">Plugin</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Registers a plugin instance of type <em></em> <code>I</code>  
+ <a href="classlvtk_1_1Plugin.html#details">More...</a></p>
 
 <p><code>#include &lt;lvtk/plugin.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a614ac238db38f5aca4eb0c935f522240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a614ac238db38f5aca4eb0c935f522240">Plugin</a> (const char *plugin_uri, const std::vector&lt; std::string &gt; &amp;required)</td></tr>
+<tr class="memdesc:a614ac238db38f5aca4eb0c935f522240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin registration with required host features.  <a href="#a614ac238db38f5aca4eb0c935f522240">More...</a><br /></td></tr>
 <tr class="separator:a614ac238db38f5aca4eb0c935f522240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62603ddec4978f159ae13debf87d9ae3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a62603ddec4978f159ae13debf87d9ae3">Plugin</a> (const char *plugin_uri)</td></tr>
+<tr class="memdesc:a62603ddec4978f159ae13debf87d9ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin Registation without required host features.  <a href="#a62603ddec4978f159ae13debf87d9ae3">More...</a><br /></td></tr>
 <tr class="separator:a62603ddec4978f159ae13debf87d9ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9287514885f72c0b30635516304528fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a9287514885f72c0b30635516304528fe">register_extension</a> (const std::string &amp;uri, const void *data)</td></tr>
+<tr class="memdesc:a9287514885f72c0b30635516304528fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to register plugin extension data but not have to implement the a mixin interface.  <a href="#a9287514885f72c0b30635516304528fe">More...</a><br /></td></tr>
 <tr class="separator:a9287514885f72c0b30635516304528fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class I&gt;<br />
 class lvtk::Plugin&lt; I &gt;</h3>
 
-<p><a class="el" href="classlvtk_1_1Plugin.html">Plugin</a> Registration</p>
+<p>Registers a plugin instance of type <em></em> <code>I</code> </p>
 <p>Create a static one of these to register your plugin instance type.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlvtk_1_1Instance.html">Instance</a> </dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">using</span> MyPlugin = <a class="code" href="classlvtk_1_1Plugin.html">lvtk::Plugin&lt;MyInstance&gt;</a>;</div><div class="line"><span class="keyword">static</span> MyPlugin my_plugin (</div><div class="line">    MY_PLUGIN_URI,           <span class="comment">//&lt; MyPlugin&#39;s URI String</span></div><div class="line">    {                            </div><div class="line">        LV2_URID__map,       <span class="comment">//&lt; List of required host features</span></div><div class="line">        LV2_WORKER__schedule</div><div class="line">    }</div><div class="line">);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classlvtk_1_1Instance.html">Instance</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a614ac238db38f5aca4eb0c935f522240"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a614ac238db38f5aca4eb0c935f522240">&#9670;&nbsp;</a></span>Plugin() <span class="overload">[1/2]</span></h2>
@@ -130,7 +136,8 @@ class lvtk::Plugin&lt; I &gt;</h3>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classlvtk_1_1Plugin.html">Plugin</a> Registation</p>
+
+<p>Plugin registration with required host features. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">plugin_uri</td><td>The URI string of your plugin </td></tr>
@@ -164,7 +171,8 @@ class lvtk::Plugin&lt; I &gt;</h3>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classlvtk_1_1Plugin.html">Plugin</a> Registation without required host features</p>
+
+<p>Plugin Registation without required host features. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">plugin_uri</td><td>The URI string of your plugin </td></tr>
@@ -208,7 +216,8 @@ class lvtk::Plugin&lt; I &gt;</h3>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Helper to register plugin extension data but not have to implement the a mixin interface.</p>
+
+<p>Helper to register plugin extension data but not have to implement the a mixin interface. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uri</td><td>The uri of your feature. </td></tr>
@@ -225,7 +234,7 @@ class lvtk::Plugin&lt; I &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

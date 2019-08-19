@@ -71,9 +71,12 @@ $(function() {
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="structlvtk_1_1State-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">State&lt; I &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__interfaces.html">Plugin Interfaces</a></div></div>  </div>
+<div class="title">State&lt; I &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__state.html">State</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Adds LV2 State support to your plugin instance.  
+ <a href="structlvtk_1_1State.html#details">More...</a></p>
 
 <p><code>#include &lt;state.hpp&gt;</code></p>
 <div class="dynheader">
@@ -81,29 +84,31 @@ Collaboration diagram for State&lt; I &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="structlvtk_1_1State__coll__graph.png" border="0" usemap="#State_3_01I_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="State_3_01I_01_4_coll__map" id="State_3_01I_01_4_coll__map">
-<area shape="rect"  title=" " alt="" coords="16,79,95,104"/>
-<area shape="rect"  href="structlvtk_1_1Interface.html" title=" " alt="" coords="5,5,105,31"/>
+<area shape="rect"  title="Adds LV2 State support to your plugin instance." alt="" coords="19,79,98,104"/>
+<area shape="rect"  href="structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,5,112,31"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3425ef932e308b47aff43d9c215f1b9e"><td class="memItemLeft" align="right" valign="top">StateStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1State.html#a3425ef932e308b47aff43d9c215f1b9e">save</a> (<a class="el" href="structlvtk_1_1StateStore.html">StateStore</a> &amp;store, uint32_t flags, const <a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> &amp;features)</td></tr>
+<tr class="memitem:a3425ef932e308b47aff43d9c215f1b9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__state.html#ga03ca319be3bdddb06bb83e7fc6e69580">StateStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1State.html#a3425ef932e308b47aff43d9c215f1b9e">save</a> (<a class="el" href="structlvtk_1_1StateStore.html">StateStore</a> &amp;store, uint32_t flags, const <a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> &amp;features)</td></tr>
+<tr class="memdesc:a3425ef932e308b47aff43d9c215f1b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the host to save state.  <a href="#a3425ef932e308b47aff43d9c215f1b9e">More...</a><br /></td></tr>
 <tr class="separator:a3425ef932e308b47aff43d9c215f1b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa23948cd66c1860d3419bcfcb1725e6"><td class="memItemLeft" align="right" valign="top">StateStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1State.html#afa23948cd66c1860d3419bcfcb1725e6">restore</a> (<a class="el" href="structlvtk_1_1StateRetrieve.html">StateRetrieve</a> &amp;retrieve, uint32_t flags, const <a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> &amp;features)</td></tr>
+<tr class="memitem:afa23948cd66c1860d3419bcfcb1725e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__state.html#ga03ca319be3bdddb06bb83e7fc6e69580">StateStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1State.html#afa23948cd66c1860d3419bcfcb1725e6">restore</a> (<a class="el" href="structlvtk_1_1StateRetrieve.html">StateRetrieve</a> &amp;retrieve, uint32_t flags, const <a class="el" href="structlvtk_1_1FeatureList.html">FeatureList</a> &amp;features)</td></tr>
+<tr class="memdesc:afa23948cd66c1860d3419bcfcb1725e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the host to restore state.  <a href="#afa23948cd66c1860d3419bcfcb1725e6">More...</a><br /></td></tr>
 <tr class="separator:afa23948cd66c1860d3419bcfcb1725e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2148dc6784db96d3d85ec3f13b31f55e"><td class="memItemLeft" align="right" valign="top"><a id="a2148dc6784db96d3d85ec3f13b31f55e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>map_extension_data</b> (ExtensionMap &amp;dmap)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>map_extension_data</b> (<a class="el" href="group__lvtk.html#gad19d0ba17870103c6095d3be32644329">ExtensionMap</a> &amp;dmap)</td></tr>
 <tr class="separator:a2148dc6784db96d3d85ec3f13b31f55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class I&gt;<br />
 struct lvtk::State&lt; I &gt;</h3>
 
-<p>Adds LV2 <a class="el" href="structlvtk_1_1State.html">State</a> support to your plugin instance </p>
+<p>Adds LV2 State support to your plugin instance. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afa23948cd66c1860d3419bcfcb1725e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa23948cd66c1860d3419bcfcb1725e6">&#9670;&nbsp;</a></span>restore()</h2>
@@ -115,7 +120,7 @@ struct lvtk::State&lt; I &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">StateStatus restore </td>
+          <td class="memname"><a class="el" href="group__state.html#ga03ca319be3bdddb06bb83e7fc6e69580">StateStatus</a> restore </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structlvtk_1_1StateRetrieve.html">StateRetrieve</a> &amp;&#160;</td>
           <td class="paramname"><em>retrieve</em>, </td>
@@ -144,11 +149,12 @@ struct lvtk::State&lt; I &gt;</h3>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called by the host to restore state</p>
+
+<p>Called by the host to restore state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">retrieve</td><td>Retrieve function object to get keys/values </td></tr>
-    <tr><td class="paramname">flags</td><td><a class="el" href="structlvtk_1_1State.html">State</a> flags to check </td></tr>
+    <tr><td class="paramname">flags</td><td>State flags to check </td></tr>
     <tr><td class="paramname">features</td><td>Additional features for this operation </td></tr>
   </table>
   </dd>
@@ -166,7 +172,7 @@ struct lvtk::State&lt; I &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">StateStatus save </td>
+          <td class="memname"><a class="el" href="group__state.html#ga03ca319be3bdddb06bb83e7fc6e69580">StateStatus</a> save </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structlvtk_1_1StateStore.html">StateStore</a> &amp;&#160;</td>
           <td class="paramname"><em>store</em>, </td>
@@ -195,11 +201,12 @@ struct lvtk::State&lt; I &gt;</h3>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called by the host to save state</p>
+
+<p>Called by the host to save state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">store</td><td>Store function object to write keys/values </td></tr>
-    <tr><td class="paramname">flags</td><td><a class="el" href="structlvtk_1_1State.html">State</a> flags to check </td></tr>
+    <tr><td class="paramname">flags</td><td>State flags to check </td></tr>
     <tr><td class="paramname">features</td><td>Additional features for this operation </td></tr>
   </table>
   </dd>
@@ -208,12 +215,12 @@ struct lvtk::State&lt; I &gt;</h3>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>interface/state.hpp</li>
+<li>state.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 17 2019 13:26:36 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>
