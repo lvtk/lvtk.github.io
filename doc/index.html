@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LV2 Toolkit: LV2 Toolkit</title>
+<title>LVTK: LV2 Toolkit</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">LV2 Toolkit
-   &#160;<span id="projectnumber">2.0.0</span>
+   <div id="projectname">LVTK
    </div>
+   <div id="projectbrief">API for writing LV2 plugins and UIs in C++</div>
   </td>
  </tr>
  </tbody>
@@ -69,8 +69,8 @@ $(function() {
 <div class="textblock"><h1><a class="anchor" id="intro"></a>
 Introduction</h1>
 <p>These documents describe some C++ classes that may be of use if you want to write LV2 plugins in C++. They implement most of the boilerplate code so you only have to write the parts that matter, and hide the low-level C API.</p>
-<p><b>Interfaces</b><br />
- For both the Instance and the ui::Instance class there are other helper classes called interfaces that you can use to add extra functionality to your plugin or UI, for example support for LV2 extensions.</p>
+<p><b>Extension Mixins</b><br />
+ For both the Instance and the UIInstance classes there are other helper classes called Extensions that you can use to add extra functionality to your plugin or UI.</p>
 <p><b>Versioning</b><br />
  This library is available as a header only, thus ABI stability is not an issue. The API will be stable between major version bumps, at which the pkg-config name would change to prevent plugins from building against an incompatible version.</p>
 <dl class="section author"><dt>Author</dt><dd>Michael Fisher <a href="#" onclick="location.href='mai'+'lto:'+'mfi'+'sh'+'er@'+'ku'+'shv'+'ie'+'w.n'+'et'; return false;">mfish<span style="display: none;">.nosp@m.</span>er@k<span style="display: none;">.nosp@m.</span>ushvi<span style="display: none;">.nosp@m.</span>ew.n<span style="display: none;">.nosp@m.</span>et</a> </dd></dl>
@@ -78,7 +78,7 @@ Introduction</h1>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 09:43:55 for LV2 Toolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>
