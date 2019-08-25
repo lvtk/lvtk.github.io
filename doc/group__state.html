@@ -64,13 +64,13 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">State</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>LV2 State support.  
+<p>Save and restore state.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -85,106 +85,23 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds LV2 State support to your plugin instance.  <a href="structlvtk_1_1State.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:gab1fb0be3fed9af2c29f1e9ebfd568d0b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__state.html#gab1fb0be3fed9af2c29f1e9ebfd568d0b">StateFlags</a> { <a class="el" href="group__state.html#ggab1fb0be3fed9af2c29f1e9ebfd568d0ba5597353c13b36f05e8612ad219abe938">STATE_IS_POD</a> = LV2_STATE_IS_POD, 
-<a class="el" href="group__state.html#ggab1fb0be3fed9af2c29f1e9ebfd568d0ba56cc0baaaaecd1dd8851ca0b95720fd4">STATE_IS_PORTABLE</a> = LV2_STATE_IS_PORTABLE, 
-<a class="el" href="group__state.html#ggab1fb0be3fed9af2c29f1e9ebfd568d0ba35a681380022a8c6e13fc89239b8d2a5">STATE_IS_NATIVE</a> = LV2_STATE_IS_NATIVE
- }</td></tr>
-<tr class="memdesc:gab1fb0be3fed9af2c29f1e9ebfd568d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of LV2_State_Flags.  <a href="group__state.html#gab1fb0be3fed9af2c29f1e9ebfd568d0b">More...</a><br /></td></tr>
-<tr class="separator:gab1fb0be3fed9af2c29f1e9ebfd568d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03ca319be3bdddb06bb83e7fc6e69580"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__state.html#ga03ca319be3bdddb06bb83e7fc6e69580">StateStatus</a> { <br />
-&#160;&#160;<a class="el" href="group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580a95fdd6b02cbc698e4bd1a4eafe1661ff">STATE_SUCCESS</a> = LV2_STATE_SUCCESS, 
-<a class="el" href="group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580aa3e65bfda39f6f72d1233cd0f8e37c94">STATE_ERR_UNKNOWN</a> = LV2_STATE_ERR_UNKNOWN, 
-<a class="el" href="group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580a58047e166925e45fd901f4662e89659e">STATE_ERR_BAD_TYPE</a> = LV2_STATE_ERR_BAD_TYPE, 
-<a class="el" href="group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580ac3b06ce6b4c738fec86e5c4e8440d367">STATE_ERR_BAD_FLAGS</a> = LV2_STATE_ERR_BAD_FLAGS, 
-<br />
-&#160;&#160;<a class="el" href="group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580a8d21ea3aa44129e45fde19272318505f">STATE_ERR_NO_FEATURE</a> = LV2_STATE_ERR_NO_FEATURE, 
-<a class="el" href="group__state.html#gga03ca319be3bdddb06bb83e7fc6e69580ab0de39d15af39390cd784f32f07c6b6a">STATE_ERR_NO_PROPERTY</a> = LV2_STATE_ERR_NO_PROPERTY
-<br />
- }</td></tr>
-<tr class="memdesc:ga03ca319be3bdddb06bb83e7fc6e69580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of LV2_State_Status.  <a href="group__state.html#ga03ca319be3bdddb06bb83e7fc6e69580">More...</a><br /></td></tr>
-<tr class="separator:ga03ca319be3bdddb06bb83e7fc6e69580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaf4228c7622fc55aaec18d6188fb3406a"><td class="memItemLeft" align="right" valign="top"><a id="gaf4228c7622fc55aaec18d6188fb3406a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__state.html#gaf4228c7622fc55aaec18d6188fb3406a">StateFlags</a> = LV2_State_Flags</td></tr>
+<tr class="memdesc:gaf4228c7622fc55aaec18d6188fb3406a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of LV2_State_Flags. <br /></td></tr>
+<tr class="separator:gaf4228c7622fc55aaec18d6188fb3406a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85d71f9aba8228ef5f699077cac7aaba"><td class="memItemLeft" align="right" valign="top"><a id="ga85d71f9aba8228ef5f699077cac7aaba"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__state.html#ga85d71f9aba8228ef5f699077cac7aaba">StateStatus</a> = LV2_State_Status</td></tr>
+<tr class="memdesc:ga85d71f9aba8228ef5f699077cac7aaba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of LV2_State_Status. <br /></td></tr>
+<tr class="separator:ga85d71f9aba8228ef5f699077cac7aaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>LV2 State support. </p>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gab1fb0be3fed9af2c29f1e9ebfd568d0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab1fb0be3fed9af2c29f1e9ebfd568d0b">&#9670;&nbsp;</a></span>StateFlags</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__state.html#gab1fb0be3fed9af2c29f1e9ebfd568d0b">StateFlags</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Alias of LV2_State_Flags. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab1fb0be3fed9af2c29f1e9ebfd568d0ba5597353c13b36f05e8612ad219abe938"></a>STATE_IS_POD&#160;</td><td class="fielddoc"><p>Plain Old Data. </p>
-<pre class="fragment">Values with this flag contain no pointers or references to other areas
-of memory.  It is safe to copy POD values with a simple memcpy and store
-them for the duration of the process.  A POD value is not necessarily
-safe to trasmit between processes or machines (e.g. filenames are POD),
-see STATE_IS_PORTABLE for details.
-
-Implementations MUST NOT attempt to copy or serialise a non-POD value if
-they do not understand its type (and thus know how to correctly do so).
-</pre> </td></tr>
-<tr><td class="fieldname"><a id="ggab1fb0be3fed9af2c29f1e9ebfd568d0ba56cc0baaaaecd1dd8851ca0b95720fd4"></a>STATE_IS_PORTABLE&#160;</td><td class="fielddoc"><p>Portable (architecture independent) data. </p>
-<pre class="fragment">Values with this flag are in a format that is usable on any
-architecture.  A portable value saved on one machine can be restored on
-another machine regardless of architecture.  The format of portable
-values MUST NOT depend on architecture-specific properties like
-endianness or alignment.  Portable values MUST NOT contain filenames.
-</pre> </td></tr>
-<tr><td class="fieldname"><a id="ggab1fb0be3fed9af2c29f1e9ebfd568d0ba35a681380022a8c6e13fc89239b8d2a5"></a>STATE_IS_NATIVE&#160;</td><td class="fielddoc"><p>Native data. </p>
-<pre class="fragment">This flag is used by the host to indicate that the saved data is only
-going to be used locally in the currently running process (e.g. for
-instance duplication or snapshots), so the plugin should use the most
-efficient representation possible and not worry about serialisation
-and portability.
-</pre> </td></tr>
-</table>
-
-</div>
-</div>
-<a id="ga03ca319be3bdddb06bb83e7fc6e69580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga03ca319be3bdddb06bb83e7fc6e69580">&#9670;&nbsp;</a></span>StateStatus</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__state.html#ga03ca319be3bdddb06bb83e7fc6e69580">StateStatus</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Alias of LV2_State_Status. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga03ca319be3bdddb06bb83e7fc6e69580a95fdd6b02cbc698e4bd1a4eafe1661ff"></a>STATE_SUCCESS&#160;</td><td class="fielddoc"><p>Completed successfully. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga03ca319be3bdddb06bb83e7fc6e69580aa3e65bfda39f6f72d1233cd0f8e37c94"></a>STATE_ERR_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown error. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga03ca319be3bdddb06bb83e7fc6e69580a58047e166925e45fd901f4662e89659e"></a>STATE_ERR_BAD_TYPE&#160;</td><td class="fielddoc"><p>Failed due to unsupported type. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga03ca319be3bdddb06bb83e7fc6e69580ac3b06ce6b4c738fec86e5c4e8440d367"></a>STATE_ERR_BAD_FLAGS&#160;</td><td class="fielddoc"><p>Failed due to unsupported flags. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga03ca319be3bdddb06bb83e7fc6e69580a8d21ea3aa44129e45fde19272318505f"></a>STATE_ERR_NO_FEATURE&#160;</td><td class="fielddoc"><p>Failed due to missing features. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga03ca319be3bdddb06bb83e7fc6e69580ab0de39d15af39390cd784f32f07c6b6a"></a>STATE_ERR_NO_PROPERTY&#160;</td><td class="fielddoc"><p>Failed due to missing property. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
+<p>Save and restore state. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

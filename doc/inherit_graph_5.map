@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structlvtk_1_1AtomSequence.html" title="A wrapper around LV2_Atom_Sequence." alt="" coords="5,5,118,31"/>
+<area shape="rect" id="node1" title="STL class." alt="" coords="5,31,94,56"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1DescriptorList.html" title="Internal class which maintains a list of descriptors." alt="" coords="142,5,277,31"/>
+<area shape="rect" id="node3" href="$structlvtk_1_1FeatureList.html" title="A Vector of Features." alt="" coords="165,55,253,80"/>
 </map>

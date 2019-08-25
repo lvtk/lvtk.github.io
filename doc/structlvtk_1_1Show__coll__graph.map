@@ -1,5 +1,5 @@
 <map id="Show&lt; I &gt;" name="Show&lt; I &gt;">
 <area shape="rect" id="node1" title="Adds LV2UI_Show support to your UI instance." alt="" coords="18,152,99,177"/>
-<area shape="rect" id="node2" href="$structlvtk_1_1Idle.html" title="Adds idle interface to your UI instance." alt="" coords="24,79,93,104"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1Idle.html" title="Adds the idle interface to your UI instance." alt="" coords="24,79,93,104"/>
 <area shape="rect" id="node3" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,5,112,31"/>
 </map>

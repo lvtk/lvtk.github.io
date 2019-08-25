@@ -68,26 +68,32 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="structlvtk_1_1DataAccess-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DataAccess&lt; I &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__data__access.html">Data Access</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Give access to plugin extension data to your <a class="el" href="classlvtk_1_1UIInstance.html">UIInstance</a>.  
+<p>Give access to plugin extension data to your <a class="el" href="classlvtk_1_1UI.html">UI</a>.  
  <a href="structlvtk_1_1DataAccess.html#details">More...</a></p>
 
-<p><code>#include &lt;data_access.hpp&gt;</code></p>
+<p><code>#include &lt;lvtk/ext/data_access.hpp&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for DataAccess&lt; I &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="structlvtk_1_1DataAccess__coll__graph.png" border="0" usemap="#DataAccess_3_01I_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="DataAccess_3_01I_01_4_coll__map" id="DataAccess_3_01I_01_4_coll__map">
-<area shape="rect"  title="Give access to plugin extension data to your UIInstance." alt="" coords="31,241,150,267"/>
-<area shape="rect"  href="structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="39,167,142,192"/>
-<area shape="rect"  href="structlvtk_1_1Extension.html" title=" " alt="" coords="5,92,176,117"/>
-<area shape="rect"  href="structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="37,5,144,31"/>
+<area shape="rect"  title="Give access to plugin extension data to your UI." alt="" coords="152,441,271,467"/>
+<area shape="rect"  href="structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="96,355,199,380"/>
+<area shape="rect"  href="structlvtk_1_1Extension.html" title=" " alt="" coords="5,273,176,299"/>
+<area shape="rect"  href="structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="37,167,144,192"/>
+<area shape="rect"  href="structlvtk_1_1ExtensionData.html" title="An LV2_Extension_Data_Feature function wrapper." alt="" coords="232,355,341,380"/>
+<area shape="rect"  href="structlvtk_1_1FeatureData.html" title=" " alt="" coords="199,267,395,305"/>
+<area shape="rect"  title="STL class." alt="" coords="358,80,412,105"/>
+<area shape="rect"  href="structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="216,167,360,192"/>
+<area shape="rect"  title="STL class." alt="" coords="314,5,456,31"/>
+<area shape="rect"  title=" " alt="" coords="268,80,307,105"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -97,47 +103,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8e22f1b1f2fbfc2b0ad00978b390854e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls extension_data on the plugin if supported by the host.  <a href="#a8e22f1b1f2fbfc2b0ad00978b390854e">More...</a><br /></td></tr>
 <tr class="separator:a8e22f1b1f2fbfc2b0ad00978b390854e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a66ba5287b5b0b7f27b3c67526a708201"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1NullExtension.html#a66ba5287b5b0b7f27b3c67526a708201">map_extension_data</a> (<a class="el" href="group__lvtk.html#gad19d0ba17870103c6095d3be32644329">ExtensionMap</a> &amp;)</td></tr>
-<tr class="memdesc:a66ba5287b5b0b7f27b3c67526a708201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy extension data handler for interfaces which do not provide extension data.  <a href="#a66ba5287b5b0b7f27b3c67526a708201">More...</a><br /></td></tr>
-<tr class="separator:a66ba5287b5b0b7f27b3c67526a708201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:afef44a68930d22bdb1a6dae4b7bc1fd1"><td class="memItemLeft" align="right" valign="top"><a id="afef44a68930d22bdb1a6dae4b7bc1fd1"></a>
+<a class="el" href="structlvtk_1_1ExtensionData.html">ExtensionData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1DataAccess.html#afef44a68930d22bdb1a6dae4b7bc1fd1">data_access</a></td></tr>
+<tr class="memdesc:afef44a68930d22bdb1a6dae4b7bc1fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data access function. <br /></td></tr>
+<tr class="separator:afef44a68930d22bdb1a6dae4b7bc1fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class I&gt;<br />
 struct lvtk::DataAccess&lt; I &gt;</h3>
 
-<p>Give access to plugin extension data to your <a class="el" href="classlvtk_1_1UIInstance.html">UIInstance</a>. </p>
+<p>Give access to plugin extension data to your <a class="el" href="classlvtk_1_1UI.html">UI</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a66ba5287b5b0b7f27b3c67526a708201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66ba5287b5b0b7f27b3c67526a708201">&#9670;&nbsp;</a></span>map_extension_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void map_extension_data </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__lvtk.html#gad19d0ba17870103c6095d3be32644329">ExtensionMap</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Dummy extension data handler for interfaces which do not provide extension data. </p>
-<dl class="section see"><dt>See also</dt><dd>BufSize </dd></dl>
-
-</div>
-</div>
 <a id="a8e22f1b1f2fbfc2b0ad00978b390854e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e22f1b1f2fbfc2b0ad00978b390854e">&#9670;&nbsp;</a></span>plugin_extension_data()</h2>
 
@@ -169,6 +147,7 @@ struct lvtk::DataAccess&lt; I &gt;</h3>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>This is an alias to <code>data_access</code></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>extension data or nullptr if not available </dd></dl>
 
 </div>
@@ -179,7 +158,7 @@ struct lvtk::DataAccess&lt; I &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

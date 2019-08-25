@@ -67,7 +67,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="structlvtk_1_1InstanceHandle-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">InstanceHandle Struct Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__instance__access.html">Instance Access</a></div></div>  </div>
@@ -77,28 +80,71 @@ $(function() {
 <p>Wrap the Instance Access host feature.  
  <a href="structlvtk_1_1InstanceHandle.html#details">More...</a></p>
 
-<p><code>#include &lt;lvtk/instance_handle.hpp&gt;</code></p>
+<p><code>#include &lt;lvtk/ext/instance_access.hpp&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for InstanceHandle:</div>
+<div class="dyncontent">
+<div class="center"><img src="structlvtk_1_1InstanceHandle__coll__graph.png" border="0" usemap="#InstanceHandle_coll__map" alt="Collaboration graph"/></div>
+<map name="InstanceHandle_coll__map" id="InstanceHandle_coll__map">
+<area shape="rect"  title="Wrap the Instance Access host feature." alt="" coords="80,341,194,367"/>
+<area shape="rect"  href="structlvtk_1_1FeatureData.html" title=" " alt="" coords="61,253,214,292"/>
+<area shape="rect"  title="STL class." alt="" coords="145,80,199,105"/>
+<area shape="rect"  href="structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="5,167,149,192"/>
+<area shape="rect"  title="STL class." alt="" coords="101,5,243,31"/>
+<area shape="rect"  title=" " alt="" coords="58,80,97,105"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a37660ed75940f8cf8bfe6650c7784ebf"><td class="memItemLeft" align="right" valign="top"><a id="a37660ed75940f8cf8bfe6650c7784ebf"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>data_t</b> = <a class="el" href="group__lvtk.html#ga6c8769b63afca5cebd52888b0d43bfe9">Handle</a></td></tr>
+<tr class="separator:a37660ed75940f8cf8bfe6650c7784ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7756f3375e2c52acbecf009f7ad140c3"><td class="memItemLeft" align="right" valign="top"><a id="a7756f3375e2c52acbecf009f7ad140c3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>data_ptr_t</b> = <a class="el" href="group__lvtk.html#ga6c8769b63afca5cebd52888b0d43bfe9">Handle</a></td></tr>
+<tr class="separator:a7756f3375e2c52acbecf009f7ad140c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c0bf99beb71ae6766945188392cb1e5"><td class="memItemLeft" align="right" valign="top"><a id="a8c0bf99beb71ae6766945188392cb1e5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1InstanceHandle.html#a8c0bf99beb71ae6766945188392cb1e5">InstanceHandle</a> ()=default</td></tr>
-<tr class="memdesc:a8c0bf99beb71ae6766945188392cb1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor <br /></td></tr>
-<tr class="separator:a8c0bf99beb71ae6766945188392cb1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9969405a50c1c1fd8a9236de068d725"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lvtk.html#ga6c8769b63afca5cebd52888b0d43bfe9">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1InstanceHandle.html#aa9969405a50c1c1fd8a9236de068d725">handle</a> () const</td></tr>
-<tr class="memdesc:aa9969405a50c1c1fd8a9236de068d725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the plugin instance.  <a href="#aa9969405a50c1c1fd8a9236de068d725">More...</a><br /></td></tr>
-<tr class="separator:aa9969405a50c1c1fd8a9236de068d725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941335f65247cea43e744ae5beec9a8e"><td class="memItemLeft" align="right" valign="top"><a id="a941335f65247cea43e744ae5beec9a8e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1InstanceHandle.html#a941335f65247cea43e744ae5beec9a8e">set_feature</a> (const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;feature)</td></tr>
-<tr class="memdesc:a941335f65247cea43e744ae5beec9a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the LV2_Handle by LV2 Feature. <br /></td></tr>
-<tr class="separator:a941335f65247cea43e744ae5beec9a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec348b5869f037436b01905de9fe3ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#a8ec348b5869f037436b01905de9fe3ed">is_for</a> (const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;feature) const</td></tr>
+<tr class="memdesc:a8ec348b5869f037436b01905de9fe3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the passed feature is for this Feature Data.  <a href="#a8ec348b5869f037436b01905de9fe3ed">More...</a><br /></td></tr>
+<tr class="separator:a8ec348b5869f037436b01905de9fe3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3614153165bcb5d3eff76367aa6d4d7"><td class="memItemLeft" align="right" valign="top">data_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#ad3614153165bcb5d3eff76367aa6d4d7">get</a> () const</td></tr>
+<tr class="separator:ad3614153165bcb5d3eff76367aa6d4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173a6dc98c91890e86a0a3a1b40ab126"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#a173a6dc98c91890e86a0a3a1b40ab126">set</a> (const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;feature)</td></tr>
+<tr class="memdesc:a173a6dc98c91890e86a0a3a1b40ab126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the data from a feature.  <a href="#a173a6dc98c91890e86a0a3a1b40ab126">More...</a><br /></td></tr>
+<tr class="separator:a173a6dc98c91890e86a0a3a1b40ab126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b76affb3b5d35fa419ac234144038b"><td class="memItemLeft" align="right" valign="top"><a id="a67b76affb3b5d35fa419ac234144038b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#a67b76affb3b5d35fa419ac234144038b">operator bool</a> () const</td></tr>
+<tr class="memdesc:a67b76affb3b5d35fa419ac234144038b"><td class="mdescLeft">&#160;</td><td class="mdescRight">false if the data ptr is null <br /></td></tr>
+<tr class="separator:a67b76affb3b5d35fa419ac234144038b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a4d773555384649a1e20d464b9a89b"><td class="memItemLeft" align="right" valign="top"><a id="ac6a4d773555384649a1e20d464b9a89b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#ac6a4d773555384649a1e20d464b9a89b">operator data_ptr_t</a> () const</td></tr>
+<tr class="memdesc:ac6a4d773555384649a1e20d464b9a89b"><td class="mdescLeft">&#160;</td><td class="mdescRight">castable to <code>data_ptr_t</code> <br /></td></tr>
+<tr class="separator:ac6a4d773555384649a1e20d464b9a89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c9398e547332e1e76cc333ffa79e90"><td class="memItemLeft" align="right" valign="top">data_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#ac2c9398e547332e1e76cc333ffa79e90">operator()</a> () const</td></tr>
+<tr class="memdesc:ac2c9398e547332e1e76cc333ffa79e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call as function.  <a href="#ac2c9398e547332e1e76cc333ffa79e90">More...</a><br /></td></tr>
+<tr class="separator:ac2c9398e547332e1e76cc333ffa79e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7e7cc6939e79816b9e7adfe68d5fdfd2"><td class="memItemLeft" align="right" valign="top"><a id="a7e7cc6939e79816b9e7adfe68d5fdfd2"></a>
+const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1FeatureData.html#a7e7cc6939e79816b9e7adfe68d5fdfd2">URI</a></td></tr>
+<tr class="memdesc:a7e7cc6939e79816b9e7adfe68d5fdfd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A uri for this data. <br /></td></tr>
+<tr class="separator:a7e7cc6939e79816b9e7adfe68d5fdfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a1c7cd5d8ccddfb63939bb53a946fa553"><td class="memItemLeft" align="right" valign="top"><a id="a1c7cd5d8ccddfb63939bb53a946fa553"></a>
+data_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="separator:a1c7cd5d8ccddfb63939bb53a946fa553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrap the Instance Access host feature. </p>
-<p>Use these on the stack and all set_feature() passing the appropriate feature. </p>
+<p>Use these on the stack and all set() passing the appropriate feature. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa9969405a50c1c1fd8a9236de068d725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9969405a50c1c1fd8a9236de068d725">&#9670;&nbsp;</a></span>handle()</h2>
+<a id="ad3614153165bcb5d3eff76367aa6d4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3614153165bcb5d3eff76367aa6d4d7">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,7 +153,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__lvtk.html#ga6c8769b63afca5cebd52888b0d43bfe9">Handle</a> handle </td>
+          <td class="memname">data_ptr_t get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -115,23 +161,117 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the underlying data_t </dd></dl>
+
+</div>
+</div>
+<a id="a8ec348b5869f037436b01905de9fe3ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ec348b5869f037436b01905de9fe3ed">&#9670;&nbsp;</a></span>is_for()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_for </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;&#160;</td>
+          <td class="paramname"><em>feature</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the plugin instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>The LV2 plugin instance handle or nullptr if not available </dd></dl>
+<p>Returns true if the passed feature is for this Feature Data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature</td><td>The feature to check </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac2c9398e547332e1e76cc333ffa79e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c9398e547332e1e76cc333ffa79e90">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_ptr_t operator() </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call as function. </p>
+<dl class="section return"><dt>Returns</dt><dd>The data pointer </dd></dl>
+
+</div>
+</div>
+<a id="a173a6dc98c91890e86a0a3a1b40ab126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173a6dc98c91890e86a0a3a1b40ab126">&#9670;&nbsp;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structlvtk_1_1Feature.html">Feature</a> &amp;&#160;</td>
+          <td class="paramname"><em>feature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the data from a feature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature</td><td>The Feature to check and set </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>instance_handle.hpp</li>
+<li>instance_access.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LVTK: Plugin&lt; I &gt; Class Template Reference</title>
+<title>LVTK: Plugin&lt; S, E &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,87 +69,92 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classlvtk_1_1Plugin-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Plugin&lt; I &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__plugin.html">Plugin</a></div></div>  </div>
+<div class="title">Plugin&lt; S, E &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__plugin.html">Plugin</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Registers a plugin instance of type <em></em> <code>I</code>  
+<p>A template base class for LV2 plugin instances.  
  <a href="classlvtk_1_1Plugin.html#details">More...</a></p>
 
 <p><code>#include &lt;lvtk/plugin.hpp&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Plugin&lt; S, E &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlvtk_1_1Plugin__coll__graph.png" border="0" usemap="#Plugin_3_01S_00_01E_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="Plugin_3_01S_00_01E_01_4_coll__map" id="Plugin_3_01S_00_01E_01_4_coll__map">
+<area shape="rect"  title="A template base class for LV2 plugin instances." alt="" coords="5,79,112,104"/>
+<area shape="rect"  title=" " alt="" coords="28,5,90,31"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a614ac238db38f5aca4eb0c935f522240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a614ac238db38f5aca4eb0c935f522240">Plugin</a> (const char *plugin_uri, const std::vector&lt; std::string &gt; &amp;required)</td></tr>
-<tr class="memdesc:a614ac238db38f5aca4eb0c935f522240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin registration with required host features.  <a href="#a614ac238db38f5aca4eb0c935f522240">More...</a><br /></td></tr>
-<tr class="separator:a614ac238db38f5aca4eb0c935f522240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62603ddec4978f159ae13debf87d9ae3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a62603ddec4978f159ae13debf87d9ae3">Plugin</a> (const char *plugin_uri)</td></tr>
-<tr class="memdesc:a62603ddec4978f159ae13debf87d9ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin Registation without required host features.  <a href="#a62603ddec4978f159ae13debf87d9ae3">More...</a><br /></td></tr>
-<tr class="separator:a62603ddec4978f159ae13debf87d9ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8011fcbeb5efeda20bd2dbffbbb70165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a8011fcbeb5efeda20bd2dbffbbb70165">activate</a> ()</td></tr>
+<tr class="memdesc:a8011fcbeb5efeda20bd2dbffbbb70165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function if you need to do anything on activation.  <a href="#a8011fcbeb5efeda20bd2dbffbbb70165">More...</a><br /></td></tr>
+<tr class="separator:a8011fcbeb5efeda20bd2dbffbbb70165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d520d48d129eb564fc32648be48598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a17d520d48d129eb564fc32648be48598">connect_port</a> (uint32_t port, void *data)</td></tr>
+<tr class="memdesc:a17d520d48d129eb564fc32648be48598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to connect to your own port buffers.  <a href="#a17d520d48d129eb564fc32648be48598">More...</a><br /></td></tr>
+<tr class="separator:a17d520d48d129eb564fc32648be48598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2cf9fd9aa921f66d7f0292538acfae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#adc2cf9fd9aa921f66d7f0292538acfae">run</a> (uint32_t sample_count)</td></tr>
+<tr class="memdesc:adc2cf9fd9aa921f66d7f0292538acfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the process callback which should fill all output port buffers.  <a href="#adc2cf9fd9aa921f66d7f0292538acfae">More...</a><br /></td></tr>
+<tr class="separator:adc2cf9fd9aa921f66d7f0292538acfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8308b4bb6079733f4b77ced9d46da7a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a8308b4bb6079733f4b77ced9d46da7a9">deactivate</a> ()</td></tr>
+<tr class="memdesc:a8308b4bb6079733f4b77ced9d46da7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function if you need to do anything on deactivation.  <a href="#a8308b4bb6079733f4b77ced9d46da7a9">More...</a><br /></td></tr>
+<tr class="separator:a8308b4bb6079733f4b77ced9d46da7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b66d5e31b5dc18b314c8a68163263bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a4b66d5e31b5dc18b314c8a68163263bd">cleanup</a> ()</td></tr>
+<tr class="memdesc:a4b66d5e31b5dc18b314c8a68163263bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to handle cleanup.  <a href="#a4b66d5e31b5dc18b314c8a68163263bd">More...</a><br /></td></tr>
+<tr class="separator:a4b66d5e31b5dc18b314c8a68163263bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9287514885f72c0b30635516304528fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a9287514885f72c0b30635516304528fe">register_extension</a> (const std::string &amp;uri, const void *data)</td></tr>
-<tr class="memdesc:a9287514885f72c0b30635516304528fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to register plugin extension data but not have to implement the a mixin interface.  <a href="#a9287514885f72c0b30635516304528fe">More...</a><br /></td></tr>
-<tr class="separator:a9287514885f72c0b30635516304528fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ba5287b5b0b7f27b3c67526a708201"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#a66ba5287b5b0b7f27b3c67526a708201">map_extension_data</a> (<a class="el" href="group__lvtk.html#gad19d0ba17870103c6095d3be32644329">ExtensionMap</a> &amp;)</td></tr>
+<tr class="memdesc:a66ba5287b5b0b7f27b3c67526a708201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to add custom extension data without having to implement an <a class="el" href="structlvtk_1_1Extension.html">Extension</a> mixin.  <a href="#a66ba5287b5b0b7f27b3c67526a708201">More...</a><br /></td></tr>
+<tr class="separator:a66ba5287b5b0b7f27b3c67526a708201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:abdf5335f8ce7cd8db9a86257bcdbdcb3"><td class="memItemLeft" align="right" valign="top"><a id="abdf5335f8ce7cd8db9a86257bcdbdcb3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#abdf5335f8ce7cd8db9a86257bcdbdcb3">Plugin</a> ()=delete</td></tr>
+<tr class="memdesc:abdf5335f8ce7cd8db9a86257bcdbdcb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor not allowed. <br /></td></tr>
+<tr class="separator:abdf5335f8ce7cd8db9a86257bcdbdcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70fb8941578bba73aa9d49e0e1d4a11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html#ab70fb8941578bba73aa9d49e0e1d4a11">Plugin</a> (const <a class="el" href="structlvtk_1_1Args.html">Args</a> &amp;args)</td></tr>
+<tr class="memdesc:ab70fb8941578bba73aa9d49e0e1d4a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin with Arguments.  <a href="#ab70fb8941578bba73aa9d49e0e1d4a11">More...</a><br /></td></tr>
+<tr class="separator:ab70fb8941578bba73aa9d49e0e1d4a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a321f10b91680e1301ad9de4cfa51d22c"><td class="memItemLeft" align="right" valign="top"><a id="a321f10b91680e1301ad9de4cfa51d22c"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Descriptor&lt; S &gt;</b></td></tr>
+<tr class="separator:a321f10b91680e1301ad9de4cfa51d22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class I&gt;<br />
-class lvtk::Plugin&lt; I &gt;</h3>
+<div class="textblock"><h3>template&lt;class S, template&lt; class &gt; class... E&gt;<br />
+class lvtk::Plugin&lt; S, E &gt;</h3>
 
-<p>Registers a plugin instance of type <em></em> <code>I</code> </p>
-<p>Create a static one of these to register your plugin instance type.</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> MyPlugin = <a class="code" href="classlvtk_1_1Plugin.html">lvtk::Plugin&lt;MyInstance&gt;</a>;</div><div class="line"><span class="keyword">static</span> MyPlugin my_plugin (</div><div class="line">    MY_PLUGIN_URI,           <span class="comment">//&lt; MyPlugin&#39;s URI String</span></div><div class="line">    {                            </div><div class="line">        LV2_URID__map,       <span class="comment">//&lt; List of required host features</span></div><div class="line">        LV2_WORKER__schedule</div><div class="line">    }</div><div class="line">);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classlvtk_1_1Instance.html">Instance</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a614ac238db38f5aca4eb0c935f522240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a614ac238db38f5aca4eb0c935f522240">&#9670;&nbsp;</a></span>Plugin() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classlvtk_1_1Plugin.html">Plugin</a> </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>plugin_uri</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>required</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Plugin registration with required host features. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">plugin_uri</td><td>The URI string of your plugin </td></tr>
-    <tr><td class="paramname">required</td><td>List of required host feature URIs. If the host fails to provide any of these, instantiate will return a nullptr </td></tr>
+<p>A template base class for LV2 plugin instances. </p>
+<p>Default implementations exist for most methods, so you only have to implement <a class="el" href="classlvtk_1_1Plugin.html#a17d520d48d129eb564fc32648be48598">connect_port()</a> and <a class="el" href="classlvtk_1_1Plugin.html#adc2cf9fd9aa921f66d7f0292538acfae">run()</a>.</p>
+<p>The signature of subclass must match the one in the example code below. The <code>args</code> should be used in your constructor to get "details" about instantiation.</p>
+<p>Since this is a template, simulated dynamic binding is used for the callbacks. When using <a class="el" href="structlvtk_1_1Extension.html">Extensions</a> no vtable lookups are invoked, like normal dynamic binding would.</p>
+<h3>Copy Audio Example</h3>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cstring&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;lvtk/plugin.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span>lvtk;</div><div class="line"></div><div class="line"><span class="keyword">class </span>CopyAudio : <span class="keyword">public</span> <a class="code" href="classlvtk_1_1Plugin.html">Plugin</a>&lt;CopyAudio&gt;</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    CopyAudio (<span class="keyword">const</span> <a class="code" href="structlvtk_1_1Args.html">Args</a>&amp; args) : Instance (args) { }</div><div class="line"></div><div class="line">    <span class="keywordtype">void</span> <a class="code" href="classlvtk_1_1Plugin.html#a17d520d48d129eb564fc32648be48598">connect_port</a> (uint32_t port, <span class="keywordtype">void</span>* data) {</div><div class="line">        audio[port] = data;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordtype">void</span> <a class="code" href="classlvtk_1_1Plugin.html#adc2cf9fd9aa921f66d7f0292538acfae">run</a> (uint32_t sample_count) {</div><div class="line">        std::memcpy (audio[1], audio[0], sample_count * <span class="keyword">sizeof</span> (<span class="keywordtype">float</span>));</div><div class="line">    }</div><div class="line"></div><div class="line"><span class="keyword">private</span>:</div><div class="line">    <span class="keywordtype">float</span>* audio[2];</div><div class="line">};</div><div class="line"></div><div class="line"><span class="comment">// Register a descriptor for this plugin type</span></div><div class="line"><span class="keyword">static</span> <a class="code" href="classlvtk_1_1Descriptor.html">Descriptor&lt;CopyAudio&gt;</a> copyaudio (<span class="stringliteral">&quot;http://lvtoolkit.org/plugins/CopyAudio&quot;</span>);</div></div><!-- fragment --><p>If the above code is compiled into a shared module, it could form the binary part of a fully functional LV2 plugin with one audio input port and one audio output port that just copies the input to the output.</p>
+<p>You can extend your instance by passing <a class="el" href="structlvtk_1_1Extension.html">Extensions</a> as template parameters to Instance (second template parameter and onwards).</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">S</td><td>Your super class </td></tr>
+    <tr><td class="paramname">E</td><td>List of Extension mixins</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a62603ddec4978f159ae13debf87d9ae3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62603ddec4978f159ae13debf87d9ae3">&#9670;&nbsp;</a></span>Plugin() <span class="overload">[2/2]</span></h2>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structlvtk_1_1BufSize.html">BufSize</a>, <a class="el" href="structlvtk_1_1Log.html">Log</a>, <a class="el" href="structlvtk_1_1Options.html">Options</a>, <a class="el" href="structlvtk_1_1ResizePort.html">ResizePort</a>, <a class="el" href="structlvtk_1_1State.html">State</a>, <a class="el" href="structlvtk_1_1URID.html">URID</a>, <a class="el" href="structlvtk_1_1Worker.html">Worker</a>, </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="volume_8cpp-example.html#_a0">volume.cpp</a>.</dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab70fb8941578bba73aa9d49e0e1d4a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70fb8941578bba73aa9d49e0e1d4a11">&#9670;&nbsp;</a></span>Plugin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,22 +165,22 @@ class lvtk::Plugin&lt; I &gt;</h3>
         <tr>
           <td class="memname"><a class="el" href="classlvtk_1_1Plugin.html">Plugin</a> </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>plugin_uri</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structlvtk_1_1Args.html">Args</a> &amp;&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Plugin Registation without required host features. </p>
+<p>Plugin with Arguments. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">plugin_uri</td><td>The URI string of your plugin </td></tr>
+    <tr><td class="paramname">args</td><td>Arguments created during instantiation. Your subclass must pass the <a class="el" href="structlvtk_1_1Args.html">Args</a> here </td></tr>
   </table>
   </dd>
 </dl>
@@ -183,8 +188,8 @@ class lvtk::Plugin&lt; I &gt;</h3>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9287514885f72c0b30635516304528fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9287514885f72c0b30635516304528fe">&#9670;&nbsp;</a></span>register_extension()</h2>
+<a id="a8011fcbeb5efeda20bd2dbffbbb70165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8011fcbeb5efeda20bd2dbffbbb70165">&#9670;&nbsp;</a></span>activate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,15 +198,71 @@ class lvtk::Plugin&lt; I &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void register_extension </td>
+          <td class="memname">void activate </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>uri</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this function if you need to do anything on activation. </p>
+<p>This is always called before the host starts using the <a class="el" href="classlvtk_1_1Plugin.html#adc2cf9fd9aa921f66d7f0292538acfae">run()</a> function. You should reset your plugin to it's initial state here. </p>
+
+</div>
+</div>
+<a id="a4b66d5e31b5dc18b314c8a68163263bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b66d5e31b5dc18b314c8a68163263bd">&#9670;&nbsp;</a></span>cleanup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cleanup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this to handle cleanup. </p>
+<p>Is called immediately before the instance is deleted. You only need to implement this if you'd like to do something special before the destructor. </p>
+
+</div>
+</div>
+<a id="a17d520d48d129eb564fc32648be48598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d520d48d129eb564fc32648be48598">&#9670;&nbsp;</a></span>connect_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void connect_port </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
+          <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -212,18 +273,116 @@ class lvtk::Plugin&lt; I &gt;</h3>
       </table>
   </td>
   <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this to connect to your own port buffers. </p>
+<p>Remember that if you want your plugin to be realtime safe this function may not block, allocate memory or otherwise take a long time to return.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>The index of the port to connect. </td></tr>
+    <tr><td class="paramname">data</td><td>The buffer to connect it to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="volume_8cpp-example.html#a3">volume.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a8308b4bb6079733f4b77ced9d46da7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8308b4bb6079733f4b77ced9d46da7a9">&#9670;&nbsp;</a></span>deactivate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deactivate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this function if you need to do anything on deactivation. </p>
+<p>The host calls this when it does not plan to make any more calls to <a class="el" href="classlvtk_1_1Plugin.html#adc2cf9fd9aa921f66d7f0292538acfae">run()</a> unless it calls <a class="el" href="classlvtk_1_1Plugin.html#a8011fcbeb5efeda20bd2dbffbbb70165">activate()</a> again. </p>
+
+</div>
+</div>
+<a id="a66ba5287b5b0b7f27b3c67526a708201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ba5287b5b0b7f27b3c67526a708201">&#9670;&nbsp;</a></span>map_extension_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void map_extension_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__lvtk.html#gad19d0ba17870103c6095d3be32644329">ExtensionMap</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Helper to register plugin extension data but not have to implement the a mixin interface. </p>
+<p>Override this to add custom extension data without having to implement an <a class="el" href="structlvtk_1_1Extension.html">Extension</a> mixin. </p>
+<p>Also, it will be called after the the mixins, so if needed you can effectively override mixin extension data. </p>
+
+</div>
+</div>
+<a id="adc2cf9fd9aa921f66d7f0292538acfae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc2cf9fd9aa921f66d7f0292538acfae">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void run </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>sample_count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is the process callback which should fill all output port buffers. </p>
+<p>You most likely want to override it - the default implementation does nothing.</p>
+<p>Remember that if you want your plugin to be realtime safe, this function may not block, allocate memory or take more than <code>sample_count</code> time to execute.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uri</td><td>The uri of your feature. </td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to static extension data. </td></tr>
+    <tr><td class="paramname">sample_count</td><td>The number of audio frames to process. </td></tr>
   </table>
   </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="volume_8cpp-example.html#a4">volume.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -234,7 +393,7 @@ class lvtk::Plugin&lt; I &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -1,4 +1,10 @@
 <map id="Worker&lt; I &gt;" name="Worker&lt; I &gt;">
-<area shape="rect" id="node1" title="Adds LV2 worker support to your instance." alt="" coords="13,79,104,104"/>
-<area shape="rect" id="node2" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,5,112,31"/>
+<area shape="rect" id="node1" title="Adds LV2 worker support to your instance." alt="" coords="35,428,125,453"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,341,112,367"/>
+<area shape="rect" id="node3" href="$structlvtk_1_1WorkerSchedule.html" title="Schedule jobs with the host." alt="" coords="136,341,256,367"/>
+<area shape="rect" id="node4" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="106,253,286,292"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="216,80,270,105"/>
+<area shape="rect" id="node7" href="$structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="65,167,209,192"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="172,5,313,31"/>
+<area shape="rect" id="node8" title=" " alt="" coords="118,80,157,105"/>
 </map>

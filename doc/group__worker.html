@@ -64,13 +64,13 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Worker</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>LV2 Worker support.  
+<p>Scheduling work and processing jobs.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -78,53 +78,27 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1WorkerRespond.html">WorkerRespond</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Worker reponse function.  <a href="structlvtk_1_1WorkerRespond.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Scheduler.html">Scheduler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule jobs with the host.  <a href="structlvtk_1_1Scheduler.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1WorkerSchedule.html">WorkerSchedule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule jobs with the host.  <a href="structlvtk_1_1WorkerSchedule.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Worker.html">Worker&lt; I &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds LV2 worker support to your instance.  <a href="structlvtk_1_1Worker.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:gaf173eb536297cdeebd32002cb0ce16bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a> { <a class="el" href="group__worker.html#ggaf173eb536297cdeebd32002cb0ce16bfa5a52b13f367e60743909adeb4570fa96">WORKER_SUCCESS</a> = LV2_WORKER_SUCCESS, 
-<a class="el" href="group__worker.html#ggaf173eb536297cdeebd32002cb0ce16bfa2dfc6bc629ff3f99e545e41562558f5d">WORKER_ERR_UNKNOWN</a> = LV2_WORKER_ERR_UNKNOWN, 
-<a class="el" href="group__worker.html#ggaf173eb536297cdeebd32002cb0ce16bfaed3330c5be432883ee07d7bdc2d6fe99">WORKER_ERR_NO_SPACE</a> = LV2_WORKER_ERR_NO_SPACE
- }</td></tr>
-<tr class="memdesc:gaf173eb536297cdeebd32002cb0ce16bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience enum to get LV2_Worker_Status into a C++ namespace.  <a href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">More...</a><br /></td></tr>
-<tr class="separator:gaf173eb536297cdeebd32002cb0ce16bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga6ec393ed710446787ed8767b9a5b9224"><td class="memItemLeft" align="right" valign="top"><a id="ga6ec393ed710446787ed8767b9a5b9224"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__worker.html#ga6ec393ed710446787ed8767b9a5b9224">WorkerStatus</a> = LV2_Worker_Status</td></tr>
+<tr class="memdesc:ga6ec393ed710446787ed8767b9a5b9224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of LV2_Worker_Status. <br /></td></tr>
+<tr class="separator:ga6ec393ed710446787ed8767b9a5b9224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>LV2 Worker support. </p>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gaf173eb536297cdeebd32002cb0ce16bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf173eb536297cdeebd32002cb0ce16bf">&#9670;&nbsp;</a></span>WorkerStatus</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convenience enum to get LV2_Worker_Status into a C++ namespace. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf173eb536297cdeebd32002cb0ce16bfa5a52b13f367e60743909adeb4570fa96"></a>WORKER_SUCCESS&#160;</td><td class="fielddoc"><p>Work Completed. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaf173eb536297cdeebd32002cb0ce16bfa2dfc6bc629ff3f99e545e41562558f5d"></a>WORKER_ERR_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown error. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaf173eb536297cdeebd32002cb0ce16bfaed3330c5be432883ee07d7bdc2d6fe99"></a>WORKER_ERR_NO_SPACE&#160;</td><td class="fielddoc"><p>Fail due to Lack of Space. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>Scheduling work and processing jobs. </p>
+<h3>Example</h3>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;lvtk/plugin.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;lvtk/ext/worker.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span>lvtk;</div><div class="line"></div><div class="line"><span class="keyword">class </span>WorkPlugin : <span class="keyword">public</span> <a class="code" href="classlvtk_1_1Plugin.html">Plugin</a>&lt;WorkPlugin, Worker&gt; {</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    WorkPlugin (<span class="keyword">const</span> <a class="code" href="structlvtk_1_1Args.html">Args</a>&amp; args) : <a class="code" href="classlvtk_1_1Plugin.html">Plugin</a> (args) {}</div><div class="line"></div><div class="line">    <span class="keywordtype">void</span> run (uint32_t nframes) {</div><div class="line">        <span class="comment">// schedule some work. This just writes a string which isn&#39;t that useful</span></div><div class="line">        schedule_work (<span class="stringliteral">&quot;workmsg&quot;</span>, strlen(<span class="stringliteral">&quot;workmsg&quot;</span>) + 1);</div><div class="line">    }</div><div class="line"></div><div class="line">    <a class="code" href="group__worker.html#ga6ec393ed710446787ed8767b9a5b9224">WorkerStatus</a> work (<a class="code" href="structlvtk_1_1WorkerRespond.html">WorkerRespond</a> &amp;respond, uint32_t size, <span class="keyword">const</span> <span class="keywordtype">void</span>* data) { </div><div class="line">        <span class="comment">// perform work</span></div><div class="line">        <span class="comment">// send responses with @c respond</span></div><div class="line">        <span class="keywordflow">return</span> WORKER_SUCCESS; </div><div class="line">    }</div><div class="line"></div><div class="line">    <a class="code" href="group__worker.html#ga6ec393ed710446787ed8767b9a5b9224">WorkerStatus</a> work_response (uint32_t size, <span class="keyword">const</span> <span class="keywordtype">void</span>* body) {</div><div class="line">        <span class="comment">// handle responses send in @c work</span></div><div class="line">        <span class="keywordflow">return</span> WORKER_SUCCESS;</div><div class="line">    }</div><div class="line"></div><div class="line">    <a class="code" href="group__worker.html#ga6ec393ed710446787ed8767b9a5b9224">WorkerStatus</a> end_run() {</div><div class="line">        <span class="comment">// optional: do anything needed at the end of the run cycle    </span></div><div class="line">    }</div><div class="line">};</div></div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

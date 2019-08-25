@@ -1,8 +1,8 @@
 <map id="PortResizer" name="PortResizer">
-<area shape="rect" id="node1" title="Resize port wrapper." alt="" coords="61,341,152,367"/>
-<area shape="rect" id="node2" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="17,253,195,292"/>
-<area shape="rect" id="node3" title="STL class." alt="" coords="144,80,198,105"/>
-<area shape="rect" id="node5" href="$structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="17,167,145,192"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="101,5,242,31"/>
-<area shape="rect" id="node6" title=" " alt="" coords="61,80,100,105"/>
+<area shape="rect" id="node1" title="Resize port wrapper." alt="" coords="92,341,183,367"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="48,253,226,292"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="160,80,214,105"/>
+<area shape="rect" id="node5" href="$structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="5,167,149,192"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="116,5,257,31"/>
+<area shape="rect" id="node6" title=" " alt="" coords="58,80,97,105"/>
 </map>

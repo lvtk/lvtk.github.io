@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['handle',['Handle',['../group__lvtk.html#ga6c8769b63afca5cebd52888b0d43bfe9',1,'lvtk']]]
+  ['forgeframe',['ForgeFrame',['../group__atom.html#ga25abdc8b9eba45553cdffcecfae33fcd',1,'lvtk']]],
+  ['forgeref',['ForgeRef',['../group__atom.html#ga632a102ffdf911a8d1eb14375c11bb04',1,'lvtk']]]
 ];

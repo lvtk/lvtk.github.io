@@ -1,6 +1,12 @@
 <map id="DataAccess&lt; I &gt;" name="DataAccess&lt; I &gt;">
-<area shape="rect" id="node1" title="Give access to plugin extension data to your UIInstance." alt="" coords="31,241,150,267"/>
-<area shape="rect" id="node2" href="$structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="39,167,142,192"/>
-<area shape="rect" id="node3" href="$structlvtk_1_1Extension.html" title=" " alt="" coords="5,92,176,117"/>
-<area shape="rect" id="node4" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="37,5,144,31"/>
+<area shape="rect" id="node1" title="Give access to plugin extension data to your UI." alt="" coords="152,441,271,467"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="96,355,199,380"/>
+<area shape="rect" id="node3" href="$structlvtk_1_1Extension.html" title=" " alt="" coords="5,273,176,299"/>
+<area shape="rect" id="node4" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="37,167,144,192"/>
+<area shape="rect" id="node5" href="$structlvtk_1_1ExtensionData.html" title="An LV2_Extension_Data_Feature function wrapper." alt="" coords="232,355,341,380"/>
+<area shape="rect" id="node6" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="199,267,395,305"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="358,80,412,105"/>
+<area shape="rect" id="node9" href="$structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="216,167,360,192"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="314,5,456,31"/>
+<area shape="rect" id="node10" title=" " alt="" coords="268,80,307,105"/>
 </map>

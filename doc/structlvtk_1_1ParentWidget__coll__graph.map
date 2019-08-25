@@ -1,0 +1,8 @@
+<map id="ParentWidget" name="ParentWidget">
+<area shape="rect" id="node1" title="Parent feature." alt="" coords="85,355,187,380"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="49,267,223,305"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="150,80,204,105"/>
+<area shape="rect" id="node5" href="$structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="5,167,149,192"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="107,5,248,31"/>
+<area shape="rect" id="node6" title=" " alt="" coords="58,80,97,105"/>
+</map>

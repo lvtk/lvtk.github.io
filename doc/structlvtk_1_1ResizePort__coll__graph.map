@@ -1,6 +1,12 @@
 <map id="ResizePort&lt; I &gt;" name="ResizePort&lt; I &gt;">
-<area shape="rect" id="node1" title="Adds a Logger log to your instance." alt="" coords="34,241,147,267"/>
-<area shape="rect" id="node2" href="$structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="39,167,142,192"/>
-<area shape="rect" id="node3" href="$structlvtk_1_1Extension.html" title=" " alt="" coords="5,92,176,117"/>
-<area shape="rect" id="node4" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="37,5,144,31"/>
+<area shape="rect" id="node1" title="Adds Port Resize support." alt="" coords="151,428,264,453"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="96,341,199,367"/>
+<area shape="rect" id="node3" href="$structlvtk_1_1Extension.html" title=" " alt="" coords="5,260,176,285"/>
+<area shape="rect" id="node4" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="37,167,144,192"/>
+<area shape="rect" id="node5" href="$structlvtk_1_1PortResizer.html" title="Resize port wrapper." alt="" coords="233,341,324,367"/>
+<area shape="rect" id="node6" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="200,253,378,292"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="392,80,445,105"/>
+<area shape="rect" id="node9" href="$structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="230,167,375,192"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="348,5,489,31"/>
+<area shape="rect" id="node10" title=" " alt="" coords="283,80,322,105"/>
 </map>

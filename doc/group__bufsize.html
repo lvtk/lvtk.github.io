@@ -69,24 +69,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>LV2 Buf Size support.  
+<p>Access to buffer information.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1BufferDetails.html">BufferDetails</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of buffer details.  <a href="structlvtk_1_1BufferDetails.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of buffer information.  <a href="structlvtk_1_1BufferDetails.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1BufSize.html">BufSize&lt; I &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds LV2 BufSize support to your plugin.  <a href="structlvtk_1_1BufSize.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LV2 Buf Size Extension.  <a href="structlvtk_1_1BufSize.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>LV2 Buf Size support. </p>
-</div><!-- contents -->
+<p>Access to buffer information. </p>
+<p>The BufSize extension scans for buffer information provided by the host, and populates a BufferDetails accordingly. To use it, add BufSize to the template parameters of your Plugin and call buffer_details() for buffer info</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span>MyPlug : <span class="keyword">public</span> <a class="code" href="classlvtk_1_1Plugin.html">lvtk::Plugin</a>&lt;MyPlug, lvtk::BufSize&gt; {</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    MyPlug (<a class="code" href="structlvtk_1_1Args.html">lvtk::Args</a>&amp; args) : lvtk::Plugin (args) {</div><div class="line">        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; details = buffer_details();</div><div class="line">        <span class="comment">// setup plugin using details</span></div><div class="line">    }</div><div class="line">};</div></div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

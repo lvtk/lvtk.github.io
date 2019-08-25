@@ -76,11 +76,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Instance.html">Instance&lt; S, E &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for plugin isntances.  <a href="classlvtk_1_1Instance.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Descriptor.html">Descriptor&lt; P &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a plugin instance of type <em></em> <code>P</code>  <a href="classlvtk_1_1Descriptor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html">Plugin&lt; I &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a plugin instance of type <em></em> <code>I</code>  <a href="classlvtk_1_1Plugin.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Args.html">Args</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arguments passed to a <a class="el" href="classlvtk_1_1Plugin.html">plugin</a> instance.  <a href="structlvtk_1_1Args.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1Plugin.html">Plugin&lt; S, E &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template base class for LV2 plugin instances.  <a href="classlvtk_1_1Plugin.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -91,16 +94,14 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaffedc7aabe2715522365f21a9c1ff65d"><td class="memItemLeft" align="right" valign="top"><a id="gaffedc7aabe2715522365f21a9c1ff65d"></a>
-LV2_SYMBOL_EXPORT const LV2_Descriptor *&#160;</td><td class="memItemRight" valign="bottom"><b>lv2_descriptor</b> (uint32_t index)</td></tr>
-<tr class="separator:gaffedc7aabe2715522365f21a9c1ff65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4160cb52d392861cfd543c9e85e0ca6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__plugin.html#gac7ca33d261f44236d27838af7ac565d6">PluginDescriptors</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plugin.html#gac4160cb52d392861cfd543c9e85e0ca6">descriptors</a> ()</td></tr>
+<tr class="separator:gac4160cb52d392861cfd543c9e85e0ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Writing an LV2 Plugin. </p>
-<p>Plugin descriptors are registered on the stack at the global scope. For example...</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> MyPlugin = <a class="code" href="classlvtk_1_1Plugin.html">lvtk::Plugin&lt;MyInstance&gt;</a>;</div><div class="line"></div><div class="line"><span class="keyword">static</span> MyPlugin my_plugin (</div><div class="line">    LVTK_SILENCE_URI,           <span class="comment">//&lt; MyPlugin&#39;s URI String</span></div><div class="line">    {                            </div><div class="line">        LV2_URID__map,          <span class="comment">//&lt; List of required host features</span></div><div class="line">        LV2_WORKER__schedule</div><div class="line">    }</div><div class="line">);</div></div><!-- fragment --><p>If you are using this library in a host, include individual headers from the ext directory.</p>
-<p>Same policy for the interface directory, including anything there will result in a mess of compiler errors. Interfaces are for implementing features on a plugin instance only </p>
-<h2 class="groupheader">Typedef Documentation</h2>
+<p>Plugin descriptors are registered on the stack at the global scope. First make a sublcass of Plugin, then register it with Descriptor.</p>
+<h3>Example</h3>
+<div class="fragment"><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;math.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;lvtk/plugin.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#define LVTK_VOLUME_URI &quot;http://lvtoolkit.org/plugins/volume&quot;</span></div><div class="line"></div><div class="line"><span class="keyword">class </span>Volume : <span class="keyword">public</span> <a class="code" href="classlvtk_1_1Plugin.html">lvtk::Plugin</a>&lt;Volume&gt;</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    Volume (<span class="keyword">const</span> <a class="code" href="structlvtk_1_1Args.html">lvtk::Args</a>&amp; args) : Plugin (args) {}</div><div class="line"></div><div class="line">    <span class="keywordtype">void</span> <a class="code" href="classlvtk_1_1Plugin.html#a17d520d48d129eb564fc32648be48598">connect_port</a> (uint32_t port, <span class="keywordtype">void</span>* data) {</div><div class="line">        <span class="keywordflow">if</span> (port == 0)</div><div class="line">            input[0] = (<span class="keywordtype">float</span>*) data;</div><div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (port == 1)</div><div class="line">            input[1] = (<span class="keywordtype">float</span>*) data;</div><div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (port == 2)</div><div class="line">            output[0] = (<span class="keywordtype">float</span>*) data;</div><div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (port == 3)</div><div class="line">            output[1] = (<span class="keywordtype">float</span>*) data;</div><div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (port == 4)</div><div class="line">            db = (<span class="keywordtype">float</span>*) data;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordtype">void</span> <a class="code" href="classlvtk_1_1Plugin.html#adc2cf9fd9aa921f66d7f0292538acfae">run</a> (uint32_t nframes) {</div><div class="line">        gain = *db &gt; -90.0f ? powf (10.0f, *db * 0.05f) : 0.0f;</div><div class="line">        <span class="keywordflow">for</span> (uint32_t f = 0; f &lt; nframes; ++f)</div><div class="line">            <span class="keywordflow">for</span> (uint32_t c = 0; c &lt; 2; ++c)</div><div class="line">                output[c][f] = input[c][f] * gain;</div><div class="line">    }</div><div class="line"></div><div class="line"><span class="keyword">private</span>:</div><div class="line">    <span class="keywordtype">float</span>* input[2] { 0, 0 };</div><div class="line">    <span class="keywordtype">float</span>* output[2] { 0, 0 };</div><div class="line">    <span class="keywordtype">float</span>* db = <span class="keyword">nullptr</span>;</div><div class="line">    <span class="keywordtype">float</span> gain = 0.f;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="classlvtk_1_1Descriptor.html">lvtk::Descriptor&lt;Volume&gt;</a> volume (LVTK_VOLUME_URI, {</div><div class="line">    LV2_URID__map <span class="comment">// &lt;&lt; required host feature</span></div><div class="line">});</div></div><!-- fragment --> <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gac7ca33d261f44236d27838af7ac565d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac7ca33d261f44236d27838af7ac565d6">&#9670;&nbsp;</a></span>PluginDescriptors</h2>
 
@@ -118,10 +119,37 @@ LV2_SYMBOL_EXPORT const LV2_Descriptor *&#160;</td><td class="memItemRight" vali
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gac4160cb52d392861cfd543c9e85e0ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4160cb52d392861cfd543c9e85e0ca6">&#9670;&nbsp;</a></span>descriptors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Access to registered plugin descriptors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Plugin descriptor list </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

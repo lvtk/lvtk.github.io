@@ -1,6 +1,6 @@
-<map id="FeatureData&lt; D &gt;" name="FeatureData&lt; D &gt;">
-<area shape="rect" id="node1" title="Template class which can be used to assign feature data in a common way." alt="" coords="5,167,133,192"/>
-<area shape="rect" id="node2" title=" " alt="" coords="21,80,59,105"/>
-<area shape="rect" id="node3" title="STL class." alt="" coords="84,80,138,105"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="40,5,181,31"/>
+<map id="FeatureData&lt; D, P &gt;" name="FeatureData&lt; D, P &gt;">
+<area shape="rect" id="node1" title="Template class which can be used to assign feature data in a common way." alt="" coords="39,167,183,192"/>
+<area shape="rect" id="node2" title="STL class." alt="" coords="49,80,103,105"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="5,5,147,31"/>
+<area shape="rect" id="node4" title=" " alt="" coords="127,80,166,105"/>
 </map>

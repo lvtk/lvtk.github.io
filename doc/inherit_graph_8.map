@@ -1,3 +1,14 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classlvtk_1_1Controller.html" title="A UI Controller." alt="" coords="5,5,84,31"/>
+<area shape="rect" id="node1" href="$structlvtk_1_1Extension.html" title=" " alt="" coords="5,228,176,253"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="224,228,327,253"/>
+<area shape="rect" id="node3" href="$structlvtk_1_1BufSize.html" title="LV2 Buf Size Extension." alt="" coords="398,5,492,31"/>
+<area shape="rect" id="node4" href="$structlvtk_1_1DataAccess.html" title="Give access to plugin extension data to your UI." alt="" coords="386,55,505,80"/>
+<area shape="rect" id="node5" href="$structlvtk_1_1InstanceAccess.html" title="Adds LV2 Instance Access support to your UI." alt="" coords="375,104,516,129"/>
+<area shape="rect" id="node6" href="$structlvtk_1_1Log.html" title="Adds a Logger log to your instance." alt="" coords="410,153,480,179"/>
+<area shape="rect" id="node7" href="$structlvtk_1_1Parent.html" title="Support for UI Parent." alt="" coords="402,203,489,228"/>
+<area shape="rect" id="node8" href="$structlvtk_1_1PortMap.html" title="Support for UI Port Map." alt="" coords="396,252,494,277"/>
+<area shape="rect" id="node9" href="$structlvtk_1_1PortSubscribe.html" title="Support for UI Port Subscribe." alt="" coords="379,301,511,327"/>
+<area shape="rect" id="node10" href="$structlvtk_1_1ResizePort.html" title="Adds Port Resize support." alt="" coords="389,351,502,376"/>
+<area shape="rect" id="node11" href="$structlvtk_1_1Touch.html" title="Support for UI Touch." alt="" coords="403,400,487,425"/>
+<area shape="rect" id="node12" href="$structlvtk_1_1URID.html" title="Adds URID map and unmap to your instance." alt="" coords="405,449,486,475"/>
 </map>

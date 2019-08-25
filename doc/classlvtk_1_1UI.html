@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LVTK: UI&lt; I &gt; Class Template Reference</title>
+<title>LVTK: UI&lt; S, E &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,43 +68,90 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classlvtk_1_1UI-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">UI&lt; I &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__ui.html">UI</a></div></div>  </div>
+<div class="title">UI&lt; S, E &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__ui.html">UI</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>UI registration class Create a static one of these to register the descriptor for UI instance type.  
+<p>UI Instance.  
  <a href="classlvtk_1_1UI.html#details">More...</a></p>
 
 <p><code>#include &lt;lvtk/ui.hpp&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for UI&lt; S, E &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlvtk_1_1UI__coll__graph.png" border="0" usemap="#UI_3_01S_00_01E_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="UI_3_01S_00_01E_01_4_coll__map" id="UI_3_01S_00_01E_01_4_coll__map">
+<area shape="rect"  title="UI Instance." alt="" coords="42,92,124,117"/>
+<area shape="rect"  title=" " alt="" coords="5,5,67,31"/>
+<area shape="rect"  href="classlvtk_1_1Controller.html" title="A UI Controller." alt="" coords="91,5,171,31"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a59c8bcbff9b9af415a659c1392ac5870"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#a59c8bcbff9b9af415a659c1392ac5870">UI</a> (const std::string &amp;uri, const std::vector&lt; std::string &gt; &amp;required)</td></tr>
-<tr class="memdesc:a59c8bcbff9b9af415a659c1392ac5870"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI Registation.  <a href="#a59c8bcbff9b9af415a659c1392ac5870">More...</a><br /></td></tr>
-<tr class="separator:a59c8bcbff9b9af415a659c1392ac5870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bd87742602154d2263dd689f0fb501f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#a4bd87742602154d2263dd689f0fb501f">UI</a> (const std::string &amp;uri)</td></tr>
-<tr class="memdesc:a4bd87742602154d2263dd689f0fb501f"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI Registation.  <a href="#a4bd87742602154d2263dd689f0fb501f">More...</a><br /></td></tr>
-<tr class="separator:a4bd87742602154d2263dd689f0fb501f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20134cd2b395588890d995f81aa84e0b"><td class="memItemLeft" align="right" valign="top">LV2UI_Widget&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#a20134cd2b395588890d995f81aa84e0b">get_widget</a> ()</td></tr>
+<tr class="memdesc:a20134cd2b395588890d995f81aa84e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the LV2UI_Widget (required)  <a href="#a20134cd2b395588890d995f81aa84e0b">More...</a><br /></td></tr>
+<tr class="separator:a20134cd2b395588890d995f81aa84e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b66d5e31b5dc18b314c8a68163263bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#a4b66d5e31b5dc18b314c8a68163263bd">cleanup</a> ()</td></tr>
+<tr class="memdesc:a4b66d5e31b5dc18b314c8a68163263bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean up (optional)  <a href="#a4b66d5e31b5dc18b314c8a68163263bd">More...</a><br /></td></tr>
+<tr class="separator:a4b66d5e31b5dc18b314c8a68163263bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d4172469f51b84a6925b5407ea5b24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#aa2d4172469f51b84a6925b5407ea5b24">port_event</a> (uint32_t port, uint32_t size, uint32_t format, const void *data)</td></tr>
+<tr class="memdesc:aa2d4172469f51b84a6925b5407ea5b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port events (optional)  <a href="#aa2d4172469f51b84a6925b5407ea5b24">More...</a><br /></td></tr>
+<tr class="separator:aa2d4172469f51b84a6925b5407ea5b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103155514481c73de6f880bd9939d6a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#a103155514481c73de6f880bd9939d6a4">write</a> (uint32_t port, uint32_t size, uint32_t protocol, const void *data) const</td></tr>
+<tr class="memdesc:a103155514481c73de6f880bd9939d6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to ports.  <a href="#a103155514481c73de6f880bd9939d6a4">More...</a><br /></td></tr>
+<tr class="separator:a103155514481c73de6f880bd9939d6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72501070d8b5d9cfff142e68a8dc2253"><td class="memItemLeft" align="right" valign="top"><a id="a72501070d8b5d9cfff142e68a8dc2253"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#a72501070d8b5d9cfff142e68a8dc2253">write</a> (uint32_t port, float value) const</td></tr>
+<tr class="memdesc:a72501070d8b5d9cfff142e68a8dc2253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a float to a control port. <br /></td></tr>
+<tr class="separator:a72501070d8b5d9cfff142e68a8dc2253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9287514885f72c0b30635516304528fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#a9287514885f72c0b30635516304528fe">register_extension</a> (const std::string &amp;uri, const void *data)</td></tr>
-<tr class="memdesc:a9287514885f72c0b30635516304528fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register UI extension data but not having to implement the a mixin interface.  <a href="#a9287514885f72c0b30635516304528fe">More...</a><br /></td></tr>
-<tr class="separator:a9287514885f72c0b30635516304528fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac8e931e9e77a49bd9d108ee4e3c68fe0"><td class="memItemLeft" align="right" valign="top"><a id="ac8e931e9e77a49bd9d108ee4e3c68fe0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#ac8e931e9e77a49bd9d108ee4e3c68fe0">UI</a> ()=delete</td></tr>
+<tr class="memdesc:ac8e931e9e77a49bd9d108ee4e3c68fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor not allowed. <br /></td></tr>
+<tr class="separator:ac8e931e9e77a49bd9d108ee4e3c68fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4971b24ae16268c66623fef49a0e529"><td class="memItemLeft" align="right" valign="top"><a id="ab4971b24ae16268c66623fef49a0e529"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#ab4971b24ae16268c66623fef49a0e529">UI</a> (const <a class="el" href="structlvtk_1_1UIArgs.html">UIArgs</a> &amp;args)</td></tr>
+<tr class="memdesc:ab4971b24ae16268c66623fef49a0e529"><td class="mdescLeft">&#160;</td><td class="mdescRight">A UI with Arguments. <br /></td></tr>
+<tr class="separator:ab4971b24ae16268c66623fef49a0e529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:addd3bbfd714dff5eeeae29cf8132b7be"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classlvtk_1_1Controller.html">Controller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1UI.html#addd3bbfd714dff5eeeae29cf8132b7be">controller</a></td></tr>
+<tr class="memdesc:addd3bbfd714dff5eeeae29cf8132b7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller access.  <a href="#addd3bbfd714dff5eeeae29cf8132b7be">More...</a><br /></td></tr>
+<tr class="separator:addd3bbfd714dff5eeeae29cf8132b7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a6bca6ed1d25657246a3c12bbeb4c5d51"><td class="memItemLeft" align="right" valign="top"><a id="a6bca6ed1d25657246a3c12bbeb4c5d51"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>UIDescriptor&lt; S &gt;</b></td></tr>
+<tr class="separator:a6bca6ed1d25657246a3c12bbeb4c5d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class I&gt;<br />
-class lvtk::UI&lt; I &gt;</h3>
+<div class="textblock"><h3>template&lt;class S, template&lt; class &gt; class... E&gt;<br />
+class lvtk::UI&lt; S, E &gt;</h3>
 
-<p>UI registration class Create a static one of these to register the descriptor for UI instance type. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="volume_ui_8cpp-example.html#_a2">volume_ui.cpp</a>.</dd>
+<p>UI Instance. </p>
+<p>Inherrit this when making an LV2 UI. The first template parameter is the type of your super class. The rest are <a class="el" href="structlvtk_1_1Extension.html">Extension</a> mixins.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">S</td><td>Your super class </td></tr>
+    <tr><td class="paramname">E</td><td>List of Extension mixins </td></tr>
+  </table>
+  </dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a59c8bcbff9b9af415a659c1392ac5870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59c8bcbff9b9af415a659c1392ac5870">&#9670;&nbsp;</a></span>UI() <span class="overload">[1/2]</span></h2>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="volume_ui_8cpp-example.html#_a0">volume_ui.cpp</a>.</dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4b66d5e31b5dc18b314c8a68163263bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b66d5e31b5dc18b314c8a68163263bd">&#9670;&nbsp;</a></span>cleanup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,90 +160,78 @@ class lvtk::UI&lt; I &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlvtk_1_1UI.html">UI</a> </td>
+          <td class="memname">void cleanup </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>uri</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clean up (optional) </p>
+<p>This is called immediately before the destructor. Override it if you need to do something special beforehand. </p>
+
+</div>
+</div>
+<a id="a20134cd2b395588890d995f81aa84e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20134cd2b395588890d995f81aa84e0b">&#9670;&nbsp;</a></span>get_widget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LV2UI_Widget get_widget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the LV2UI_Widget (required) </p>
+<p>It is ok to create your widget here, but make sure that it only gets allocated once. </p>
+
+</div>
+</div>
+<a id="aa2d4172469f51b84a6925b5407ea5b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2d4172469f51b84a6925b5407ea5b24">&#9670;&nbsp;</a></span>port_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void port_event </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>required</em>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
+          <td class="paramkey"></td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>UI Registation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uri</td><td>The URI string of your UI </td></tr>
-    <tr><td class="paramname">required</td><td>List of required host feature URIs. If the host fails to provide any of these, instantiate will return a nullptr </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4bd87742602154d2263dd689f0fb501f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bd87742602154d2263dd689f0fb501f">&#9670;&nbsp;</a></span>UI() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classlvtk_1_1UI.html">UI</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>uri</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>UI Registation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uri</td><td>The URI string of your UI </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9287514885f72c0b30635516304528fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9287514885f72c0b30635516304528fe">&#9670;&nbsp;</a></span>register_extension()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void register_extension </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>uri</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -212,19 +247,98 @@ class lvtk::UI&lt; I &gt;</h3>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Register UI extension data but not having to implement the a mixin interface. </p>
+<p>Port events (optional) </p>
+<p>Called when port events are received from the host. Implement this to update the UI when properties change in the plugin. </p>
+
+</div>
+</div>
+<a id="a103155514481c73de6f880bd9939d6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103155514481c73de6f880bd9939d6a4">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void write </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>protocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write data to ports. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uri</td><td>The uri of your feature. </td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to static extension data. </td></tr>
+    <tr><td class="paramname">port</td><td></td></tr>
+    <tr><td class="paramname">size</td><td></td></tr>
+    <tr><td class="paramname">protocol</td><td></td></tr>
+    <tr><td class="paramname">data</td><td></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="addd3bbfd714dff5eeeae29cf8132b7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd3bbfd714dff5eeeae29cf8132b7be">&#9670;&nbsp;</a></span>controller</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classlvtk_1_1Controller.html">Controller</a> controller</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Controller access. </p>
+<p>This is handy if you want to use port-writing in client code, but not necessarily expose your UI class </p>
 
 </div>
 </div>
@@ -234,7 +348,7 @@ class lvtk::UI&lt; I &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

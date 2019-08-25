@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structlvtk_1_1BufferDetails.html" title="Description of buffer details." alt="" coords="5,5,103,31"/>
+<area shape="rect" id="node1" href="$structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,104,112,129"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1Idle.html" title="Adds the idle interface to your UI instance." alt="" coords="172,5,242,31"/>
+<area shape="rect" id="node4" href="$structlvtk_1_1Options.html" title="Adds support for LV2 options on your instance." alt="" coords="160,55,254,80"/>
+<area shape="rect" id="node5" href="$structlvtk_1_1Resize.html" title="Support for UI Resizing." alt="" coords="163,104,251,129"/>
+<area shape="rect" id="node6" href="$structlvtk_1_1State.html" title="Adds LV2 State support to your plugin instance." alt="" coords="167,153,246,179"/>
+<area shape="rect" id="node7" href="$structlvtk_1_1Worker.html" title="Adds LV2 worker support to your instance." alt="" coords="162,203,252,228"/>
+<area shape="rect" id="node3" href="$structlvtk_1_1Show.html" title="Adds LV2UI_Show support to your UI instance." alt="" coords="302,5,383,31"/>
 </map>

@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Dynamic Manifest</div>  </div>
@@ -79,19 +80,27 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic Manifest helper class.  <a href="classlvtk_1_1DynManifest.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga3a06a542a41a95694f66620919009e65"><td class="memItemLeft" align="right" valign="top"><a id="ga3a06a542a41a95694f66620919009e65"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dynmanifest.html#ga3a06a542a41a95694f66620919009e65">DynManifestHandle</a> = LV2_Dyn_Manifest_Handle</td></tr>
+<tr class="memdesc:ga3a06a542a41a95694f66620919009e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of LV2_Dyn_Manifest_Handle. <br /></td></tr>
+<tr class="separator:ga3a06a542a41a95694f66620919009e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5e0ad5d7431f6eff48984a353c79cb01"><td class="memItemLeft" align="right" valign="top"><a id="ga5e0ad5d7431f6eff48984a353c79cb01"></a>
-<a class="el" href="classlvtk_1_1DynManifest.html">lvtk::DynManifest</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dynmanifest.html#ga5e0ad5d7431f6eff48984a353c79cb01">lvtk_create_dyn_manifest</a> ()</td></tr>
-<tr class="memdesc:ga5e0ad5d7431f6eff48984a353c79cb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this and return your subclassed DynManifest object. <br /></td></tr>
-<tr class="separator:ga5e0ad5d7431f6eff48984a353c79cb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga267a58eec4802d8be9083f010b5c0670"><td class="memItemLeft" align="right" valign="top"><a id="ga267a58eec4802d8be9083f010b5c0670"></a>
+<a class="el" href="group__dynmanifest.html#ga3a06a542a41a95694f66620919009e65">DynManifestHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dynmanifest.html#ga267a58eec4802d8be9083f010b5c0670">lvtk_create_dyn_manifest</a> ()</td></tr>
+<tr class="memdesc:ga267a58eec4802d8be9083f010b5c0670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this and return your subclassed DynManifest object. <br /></td></tr>
+<tr class="separator:ga267a58eec4802d8be9083f010b5c0670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Dynamic Manifest support. </p>
-</div><!-- contents -->
+<h3>Example</h3>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;lvtk/dynmanifest.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">class </span>MyManifest : <span class="keyword">public</span> <a class="code" href="classlvtk_1_1DynManifest.html">lvtk::DynManifest</a> {</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="keywordtype">bool</span> <a class="code" href="classlvtk_1_1DynManifest.html#ad41703e07ebf2a341e2858b6824f30e5">get_subjects</a> (std::stringstream&amp; lines)<span class="keyword"> override </span>{</div><div class="line">        lines &lt;&lt; <span class="stringliteral">&quot;@prefix doap:  &lt;http://usefulinc.com/ns/doap#&gt; . &quot;</span> &lt;&lt; std::endl</div><div class="line">              &lt;&lt; <span class="stringliteral">&quot;@prefix lv2:   &lt;http://lv2plug.in/ns/lv2core#&gt; . &quot;</span> &lt;&lt; std::endl</div><div class="line">              &lt;&lt; <span class="stringliteral">&quot;&lt;http://myplugin.org&gt; a lv2:Plugin ;&quot;</span> &lt;&lt; std::endl;</div><div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordtype">bool</span> <a class="code" href="classlvtk_1_1DynManifest.html#aded7c1c39927e03a361895d3e10a678b">get_data</a> (<span class="keyword">const</span> std::string&amp; uri, std::vector&lt;std::string&gt;&amp; lines)<span class="keyword"> override </span>{</div><div class="line">        lines &lt;&lt; <span class="stringliteral">&quot;doap:name \&quot;My Plugin\&quot; ;&quot;</span> &lt;&lt; std::endl;</div><div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line">    }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="group__dynmanifest.html#ga3a06a542a41a95694f66620919009e65">DynManifestHandle</a> <a class="code" href="group__dynmanifest.html#ga267a58eec4802d8be9083f010b5c0670">lvtk_create_dyn_manifest</a>() {</div><div class="line">    <span class="keywordflow">return</span> <span class="keyword">new</span> MyManifest();</div><div class="line">}</div></div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

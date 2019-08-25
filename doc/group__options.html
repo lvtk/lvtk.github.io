@@ -64,26 +64,22 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Options</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>LV2 Options support.  
+<p>Dealing with LV2 Options.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1OptionsArray.html">OptionsArray</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of Options.  <a href="classlvtk_1_1OptionsArray.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1OptionArray.html">OptionArray</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of Options.  <a href="classlvtk_1_1OptionArray.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlvtk_1_1OptionsIterator.html">OptionsIterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An simple iterator to use with a plain array of LV2_Options_Option's.  <a href="classlvtk_1_1OptionsIterator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1OptionsFeature.html">OptionsFeature</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The LV2 Options Feature.  <a href="structlvtk_1_1OptionsFeature.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1OptionsData.html">OptionsData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The LV2 Options Feature.  <a href="structlvtk_1_1OptionsData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Options.html">Options&lt; I &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds support for LV2 options on your instance.  <a href="structlvtk_1_1Options.html#details">More...</a><br /></td></tr>
@@ -95,54 +91,21 @@ Typedefs</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__options.html#ga0602b345dcdff7eef27c1da97f8c9bd3">Option</a> = LV2_Options_Option</td></tr>
 <tr class="memdesc:ga0602b345dcdff7eef27c1da97f8c9bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias to <code>LV2_Options_Option</code> <br /></td></tr>
 <tr class="separator:ga0602b345dcdff7eef27c1da97f8c9bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga4ff7e3128913487cc15b67f84cb98557"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__options.html#ga4ff7e3128913487cc15b67f84cb98557">OptionsContext</a> { <a class="el" href="group__options.html#gga4ff7e3128913487cc15b67f84cb98557af25184bbb7189ce22fc11b8136026284">OPTIONS_INSTANCE</a> = LV2_OPTIONS_INSTANCE, 
-<a class="el" href="group__options.html#gga4ff7e3128913487cc15b67f84cb98557a642b56d295fda6481b58f63f6b3432c3">OPTIONS_RESOURCE</a> = LV2_OPTIONS_RESOURCE, 
-<a class="el" href="group__options.html#gga4ff7e3128913487cc15b67f84cb98557a726658f194289a18fb8999bf047c6b08">OPTIONS_BLANK</a> = LV2_OPTIONS_BLANK, 
-<a class="el" href="group__options.html#gga4ff7e3128913487cc15b67f84cb98557ab3a33321232df5b9fafe6cea0511628b">OPTIONS_PORT</a> = LV2_OPTIONS_PORT
- }</td></tr>
-<tr class="memdesc:ga4ff7e3128913487cc15b67f84cb98557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to LV2_Options_Context.  <a href="group__options.html#ga4ff7e3128913487cc15b67f84cb98557">More...</a><br /></td></tr>
-<tr class="separator:ga4ff7e3128913487cc15b67f84cb98557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90911c2d4fede987cd72d9428a77894a"><td class="memItemLeft" align="right" valign="top"><a id="ga90911c2d4fede987cd72d9428a77894a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__options.html#ga90911c2d4fede987cd72d9428a77894a">OptionsContext</a> = LV2_Options_Context</td></tr>
+<tr class="memdesc:ga90911c2d4fede987cd72d9428a77894a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to LV2_Options_Context. <br /></td></tr>
+<tr class="separator:ga90911c2d4fede987cd72d9428a77894a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga801272b3ffd5ed55ca8462493bcd901c"><td class="memItemLeft" align="right" valign="top"><a id="ga801272b3ffd5ed55ca8462493bcd901c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__options.html#ga801272b3ffd5ed55ca8462493bcd901c">OptionsStatus</a> = LV2_Options_Status</td></tr>
+<tr class="memdesc:ga801272b3ffd5ed55ca8462493bcd901c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to LV2_Options_Status. <br /></td></tr>
+<tr class="separator:ga801272b3ffd5ed55ca8462493bcd901c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>LV2 Options support. </p>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga4ff7e3128913487cc15b67f84cb98557"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4ff7e3128913487cc15b67f84cb98557">&#9670;&nbsp;</a></span>OptionsContext</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__options.html#ga4ff7e3128913487cc15b67f84cb98557">OptionsContext</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Equivalent to LV2_Options_Context. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4ff7e3128913487cc15b67f84cb98557af25184bbb7189ce22fc11b8136026284"></a>OPTIONS_INSTANCE&#160;</td><td class="fielddoc"><p>This option applies to the instance itself. </p>
-<p>The subject must be ignored. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga4ff7e3128913487cc15b67f84cb98557a642b56d295fda6481b58f63f6b3432c3"></a>OPTIONS_RESOURCE&#160;</td><td class="fielddoc"><p>This option applies to some named resource. </p>
-<p>The subject is a URI mapped to an integer (a LV2_URID, like the key) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga4ff7e3128913487cc15b67f84cb98557a726658f194289a18fb8999bf047c6b08"></a>OPTIONS_BLANK&#160;</td><td class="fielddoc"><p>This option applies to some blank node. </p>
-<p>The subject is a blank node identifier, which is valid only within the current local scope. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga4ff7e3128913487cc15b67f84cb98557ab3a33321232df5b9fafe6cea0511628b"></a>OPTIONS_PORT&#160;</td><td class="fielddoc"><p>This option applies to a port on the instance. </p>
-<p>The subject is the port's index. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
+<p>Dealing with LV2 Options. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

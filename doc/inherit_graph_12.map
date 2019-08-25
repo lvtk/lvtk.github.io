@@ -1,10 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structlvtk_1_1Extension.html" title=" " alt="" coords="5,129,176,155"/>
-<area shape="rect" id="node2" href="$structlvtk_1_1NullExtension.html" title="This is for extensions which do not provide extension data and/or call methods on the Instance." alt="" coords="224,129,327,155"/>
-<area shape="rect" id="node3" href="$structlvtk_1_1BufSize.html" title="Adds LV2 BufSize support to your plugin." alt="" coords="398,5,492,31"/>
-<area shape="rect" id="node4" href="$structlvtk_1_1DataAccess.html" title="Give access to plugin extension data to your UIInstance." alt="" coords="386,55,505,80"/>
-<area shape="rect" id="node5" href="$structlvtk_1_1InstanceAccess.html" title="Adds LV2 Instance Access support to your UI." alt="" coords="375,104,516,129"/>
-<area shape="rect" id="node6" href="$structlvtk_1_1Log.html" title="Adds a Logger log to your instance." alt="" coords="410,153,480,179"/>
-<area shape="rect" id="node7" href="$structlvtk_1_1ResizePort.html" title="Adds a Logger log to your instance." alt="" coords="389,203,502,228"/>
-<area shape="rect" id="node8" href="$structlvtk_1_1URID.html" title="Adds URID map and unmap to your instance." alt="" coords="405,252,486,277"/>
+<area shape="rect" id="node1" href="$structlvtk_1_1FeatureData.html" title=" " alt="" coords="5,5,201,44"/>
+<area shape="rect" id="node2" href="$structlvtk_1_1ExtensionData.html" title="An LV2_Extension_Data_Feature function wrapper." alt="" coords="249,12,357,37"/>
 </map>

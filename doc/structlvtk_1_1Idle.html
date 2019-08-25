@@ -75,16 +75,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Adds idle interface to your UI instance.  
+<p>Adds the idle interface to your UI instance.  
  <a href="structlvtk_1_1Idle.html#details">More...</a></p>
 
-<p><code>#include &lt;idle.hpp&gt;</code></p>
+<p><code>#include &lt;lvtk/ext/ui/idle.hpp&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Idle&lt; I &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="structlvtk_1_1Idle__coll__graph.png" border="0" usemap="#Idle_3_01I_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="Idle_3_01I_01_4_coll__map" id="Idle_3_01I_01_4_coll__map">
-<area shape="rect"  title="Adds idle interface to your UI instance." alt="" coords="24,79,93,104"/>
+<area shape="rect"  title="Adds the idle interface to your UI instance." alt="" coords="24,79,93,104"/>
 <area shape="rect"  href="structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,5,112,31"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -105,7 +105,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>map_extension_
 <div class="textblock"><h3>template&lt;class I&gt;<br />
 struct lvtk::Idle&lt; I &gt;</h3>
 
-<p>Adds idle interface to your UI instance. </p>
+<p>Adds the idle interface to your UI instance. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae732ab34575e66bc0a7bb16e51da07be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae732ab34575e66bc0a7bb16e51da07be">&#9670;&nbsp;</a></span>idle()</h2>
@@ -131,7 +131,8 @@ struct lvtk::Idle&lt; I &gt;</h3>
 </div><div class="memdoc">
 
 <p>Called repeatedly by the host to drive your UI. </p>
-<p>Return non-zero to stop receiving callbacks. </p>
+<p>Return non-zero to stop receiving callbacks.</p>
+<dl class="section return"><dt>Returns</dt><dd>one by default, so you must override this to be useful. </dd></dl>
 
 </div>
 </div>
@@ -141,7 +142,7 @@ struct lvtk::Idle&lt; I &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

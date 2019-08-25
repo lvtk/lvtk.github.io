@@ -68,7 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structlvtk_1_1Worker-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Worker&lt; I &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__worker.html">Worker</a></div></div>  </div>
@@ -78,38 +78,41 @@ $(function() {
 <p>Adds LV2 worker support to your instance.  
  <a href="structlvtk_1_1Worker.html#details">More...</a></p>
 
-<p><code>#include &lt;worker.hpp&gt;</code></p>
+<p><code>#include &lt;lvtk/ext/worker.hpp&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Worker&lt; I &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="structlvtk_1_1Worker__coll__graph.png" border="0" usemap="#Worker_3_01I_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="Worker_3_01I_01_4_coll__map" id="Worker_3_01I_01_4_coll__map">
-<area shape="rect"  title="Adds LV2 worker support to your instance." alt="" coords="13,79,104,104"/>
-<area shape="rect"  href="structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,5,112,31"/>
+<area shape="rect"  title="Adds LV2 worker support to your instance." alt="" coords="35,428,125,453"/>
+<area shape="rect"  href="structlvtk_1_1Extension.html" title="Base class for all extension mixins." alt="" coords="5,341,112,367"/>
+<area shape="rect"  href="structlvtk_1_1WorkerSchedule.html" title="Schedule jobs with the host." alt="" coords="136,341,256,367"/>
+<area shape="rect"  href="structlvtk_1_1FeatureData.html" title=" " alt="" coords="106,253,286,292"/>
+<area shape="rect"  title="STL class." alt="" coords="216,80,270,105"/>
+<area shape="rect"  href="structlvtk_1_1FeatureData.html" title="Template class which can be used to assign feature data in a common way." alt="" coords="65,167,209,192"/>
+<area shape="rect"  title="STL class." alt="" coords="172,5,313,31"/>
+<area shape="rect"  title=" " alt="" coords="118,80,157,105"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a981392ff87f2de5beaa2fbd77a33ec6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Worker.html#a981392ff87f2de5beaa2fbd77a33ec6a">schedule_work</a> (uint32_t size, const void *data) const</td></tr>
-<tr class="memdesc:a981392ff87f2de5beaa2fbd77a33ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule work with the host.  <a href="#a981392ff87f2de5beaa2fbd77a33ec6a">More...</a><br /></td></tr>
-<tr class="separator:a981392ff87f2de5beaa2fbd77a33ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4040717d712c23152351c44cc6ad60a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Worker.html#a4040717d712c23152351c44cc6ad60a7">work</a> (<a class="el" href="structlvtk_1_1WorkerRespond.html">WorkerRespond</a> &amp;respond, uint32_t size, const void *data)</td></tr>
+<tr class="memitem:a4040717d712c23152351c44cc6ad60a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__worker.html#ga6ec393ed710446787ed8767b9a5b9224">WorkerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Worker.html#a4040717d712c23152351c44cc6ad60a7">work</a> (<a class="el" href="structlvtk_1_1WorkerRespond.html">WorkerRespond</a> &amp;respond, uint32_t size, const void *data)</td></tr>
 <tr class="memdesc:a4040717d712c23152351c44cc6ad60a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform work as requested by schedule_work.  <a href="#a4040717d712c23152351c44cc6ad60a7">More...</a><br /></td></tr>
 <tr class="separator:a4040717d712c23152351c44cc6ad60a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0967eb1f6b19f917c2c695e50823e504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Worker.html#a0967eb1f6b19f917c2c695e50823e504">work_response</a> (uint32_t size, const void *body)</td></tr>
+<tr class="memitem:a0967eb1f6b19f917c2c695e50823e504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__worker.html#ga6ec393ed710446787ed8767b9a5b9224">WorkerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Worker.html#a0967eb1f6b19f917c2c695e50823e504">work_response</a> (uint32_t size, const void *body)</td></tr>
 <tr class="memdesc:a0967eb1f6b19f917c2c695e50823e504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process work responses sent with respond in the <code>work</code> callback.  <a href="#a0967eb1f6b19f917c2c695e50823e504">More...</a><br /></td></tr>
 <tr class="separator:a0967eb1f6b19f917c2c695e50823e504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae47593e969f94fb58be47d57210819b9"><td class="memItemLeft" align="right" valign="top"><a id="ae47593e969f94fb58be47d57210819b9"></a>
-<a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Worker.html#ae47593e969f94fb58be47d57210819b9">end_run</a> ()</td></tr>
+<a class="el" href="group__worker.html#ga6ec393ed710446787ed8767b9a5b9224">WorkerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Worker.html#ae47593e969f94fb58be47d57210819b9">end_run</a> ()</td></tr>
 <tr class="memdesc:ae47593e969f94fb58be47d57210819b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at the end of a processing cycle. <br /></td></tr>
 <tr class="separator:ae47593e969f94fb58be47d57210819b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2148dc6784db96d3d85ec3f13b31f55e"><td class="memItemLeft" align="right" valign="top"><a id="a2148dc6784db96d3d85ec3f13b31f55e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>map_extension_data</b> (<a class="el" href="group__lvtk.html#gad19d0ba17870103c6095d3be32644329">ExtensionMap</a> &amp;dmap)</td></tr>
-<tr class="separator:a2148dc6784db96d3d85ec3f13b31f55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a0fa4883f7aac4a1945856a7cc75adeb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlvtk_1_1WorkerSchedule.html">WorkerSchedule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlvtk_1_1Worker.html#a0fa4883f7aac4a1945856a7cc75adeb3">schedule_work</a></td></tr>
+<tr class="memdesc:a0fa4883f7aac4a1945856a7cc75adeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this to schedule a job with the host.  <a href="#a0fa4883f7aac4a1945856a7cc75adeb3">More...</a><br /></td></tr>
+<tr class="separator:a0fa4883f7aac4a1945856a7cc75adeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class I&gt;<br />
@@ -118,51 +121,6 @@ struct lvtk::Worker&lt; I &gt;</h3>
 <p>Adds LV2 worker support to your instance. </p>
 <p>Add this to your instance's Mixin list to activate it. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a981392ff87f2de5beaa2fbd77a33ec6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a981392ff87f2de5beaa2fbd77a33ec6a">&#9670;&nbsp;</a></span>schedule_work()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a> schedule_work </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Schedule work with the host. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>Size of data </td></tr>
-    <tr><td class="paramname">data</td><td>The data to schedule </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a4040717d712c23152351c44cc6ad60a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4040717d712c23152351c44cc6ad60a7">&#9670;&nbsp;</a></span>work()</h2>
 
@@ -173,7 +131,7 @@ struct lvtk::Worker&lt; I &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a> work </td>
+          <td class="memname"><a class="el" href="group__worker.html#ga6ec393ed710446787ed8767b9a5b9224">WorkerStatus</a> work </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structlvtk_1_1WorkerRespond.html">WorkerRespond</a> &amp;&#160;</td>
           <td class="paramname"><em>respond</em>, </td>
@@ -223,7 +181,7 @@ struct lvtk::Worker&lt; I &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__worker.html#gaf173eb536297cdeebd32002cb0ce16bf">WorkerStatus</a> work_response </td>
+          <td class="memname"><a class="el" href="group__worker.html#ga6ec393ed710446787ed8767b9a5b9224">WorkerStatus</a> work_response </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>size</em>, </td>
@@ -258,13 +216,32 @@ struct lvtk::Worker&lt; I &gt;</h3>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0fa4883f7aac4a1945856a7cc75adeb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fa4883f7aac4a1945856a7cc75adeb3">&#9670;&nbsp;</a></span>schedule_work</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structlvtk_1_1WorkerSchedule.html">WorkerSchedule</a> schedule_work</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use this to schedule a job with the host. </p>
+<p>This is a function object so it can be called directly.</p>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> run (uint32_t nframes) {</div><div class="line">    <span class="comment">// ...</span></div><div class="line">    </div><div class="line">    <a class="code" href="structlvtk_1_1Worker.html#a0fa4883f7aac4a1945856a7cc75adeb3">schedule_work</a> (strlen (<span class="stringliteral">&quot;non_rt_job&quot;</span>), <span class="stringliteral">&quot;non_rt_job&quot;</span>));</div><div class="line">    </div><div class="line">    <span class="comment">// ...</span></div><div class="line">}</div></div><!-- fragment --><p> The above code would result in <code>work</code> being called where "non_rt_job" is the data parameter </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>worker.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:25:12 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 25 2019 12:00:07 for LVTK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>
